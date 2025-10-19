@@ -193,11 +193,6 @@ header ul li a:hover {
 	position: relative;
 }
 
-.biography-content-1 .img-bio {
-    background-image: url(/assets/img/mirando\ a\ la\ derecha.png);
-    background-size: cover;
-}
-
 .texto {
 	font-size: 1.2rem;
 	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
@@ -219,10 +214,12 @@ header ul li a:hover {
 	transform: translate(-40%, -30%);
 }
 
-/* Biography-content-2 */
+                                                                                                    /* Biography-content-2 */
 
 .biography-content-2 {
     position: relative;
+    height: 100vh;
+    margin-bottom: 4rem;
 }
 
 .biography-content-2 h3{
@@ -231,18 +228,29 @@ header ul li a:hover {
 	font-weight: 600;
     margin-top: 2rem;
 	padding-right: 3rem;
-	padding-bottom: 1rem;
+	padding-bottom: 2rem;
     text-align: end;
 }
 
-.biography-content-2 .img-bio {
-    background-image: url(/assets/img/mirando\ a\ la\ derecha.png);
+.biography-content-2 .img-bio2 {
+    margin-left: 4rem;
 }
 
 .biography-content-2 .texto {
     position: absolute;
+    width: 30%;
+    top:50%;
+    left: 70%;
+    transform: translate(-40%, -30%);
+}
+
+                                                                                                    /* Division */
+.image{
+    max-width: 100%;
+    height: 100%;
 }
 
 /* <!---------------------------------------------------------------------------------------------- ALBUMS ----------------------------------------------------------------------------------------------> */
 /* <!---------------------------------------------------------------------------------------------- ON TOUR----------------------------------------------------------------------------------------------> */
 /* <!---------------------------------------------------------------------------------------------- CONTACT ---------------------------------------------------------------------------------------------> */
+/* <!---------------------------------------------------------------------------------------------- FOOOTER----------------------------------------------------------------------------------------------> */
