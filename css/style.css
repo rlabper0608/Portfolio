@@ -462,8 +462,8 @@ header ul li a:hover {
 	transform: translate(55%, 0%);
 }
 
-.song10{
-    top: -58%;
+.song10 {
+	top: -58%;
 	left: 110%;
 	transform: translate(70%, 0%);
 }
@@ -487,12 +487,11 @@ header ul li a:hover {
 	transform: translate(55%, 0%);
 }
 
-.song12{
-    top: -83%;
+.song12 {
+	top: -83%;
 	left: 110%;
 	transform: translate(70%, 0%);
 }
-
 
 /* LUNA 18 (DELUXE) */
 
@@ -505,6 +504,76 @@ header ul li a:hover {
 	align-items: center;
 	width: 50%;
 	height: 100%;
+}
+
+/* Last Track */
+
+.albums-last-track-container {
+	margin-top: 20rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+.albums-last-track-container .title {
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+	top: -5%;
+	left: 22%;
+}
+
+.video {
+	flex: 1;
+	margin-top: 5rem;
+	margin-left: 10rem;
+}
+
+.video-last-track {
+	width: 90%;
+	max-width: 800px;
+	border-radius: 20px;
+}
+
+.parte-derecha {
+	position: absolute;
+	margin-left: 70rem;
+}
+
+.song-title {
+	width: 250%;
+	font-size: 3rem;
+	font-weight: 600;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+    transform: translate(0%, -100%);
+}
+
+.listen{
+    display:flex;
+}
+
+.listen p{
+    font-size: 2rem;
+}
+
+.media{
+    display: flex;
+}
+
+.media-1{
+    flex:1
+}
+
+.media-2{
+    flex:1;
+}
+
+.media .logo{
+    width: 90px;
 }
 
 /* <!---------------------------------------------------------------------------------------------- ON TOUR----------------------------------------------------------------------------------------------> */
