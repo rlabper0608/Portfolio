@@ -233,10 +233,10 @@ header ul li a:hover {
 	text-align: end;
 }
 
-.biography-content-2-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.biography-content-2-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .biography-content-2 .texto {
@@ -252,15 +252,15 @@ header ul li a:hover {
 	max-width: 100%;
 	height: auto;
 	display: block;
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 /* Biography-content-3 */
 
-.biography-content-3{
-    position: relative;
-    height: 90vh;
-    margin-bottom:2rem;
+.biography-content-3 {
+	position: relative;
+	height: 90vh;
+	margin-bottom: 2rem;
 }
 
 .biography-content-3 h3 {
@@ -272,14 +272,14 @@ header ul li a:hover {
 	padding-bottom: 2rem;
 }
 
-.biography-content-3-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.biography-content-3-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.biography-content-3 .texto p{
-    font-size: 1.5rem;
+.biography-content-3 .texto p {
+	font-size: 1.5rem;
 }
 
 .biography-content-3 .texto p:nth-child(1) {
@@ -300,10 +300,9 @@ header ul li a:hover {
 
 /* Biography-content-4 */
 
-.biography-content-4{
-    position: relative;
-    height: 100vh;
-    margin-bottom:2rem;
+.biography-content-4 {
+	position: relative;
+	margin-bottom: -0.5rem;
 }
 
 .biography-content-4 h3 {
@@ -316,7 +315,7 @@ header ul li a:hover {
 }
 
 .biography-content-4 .texto {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 	position: absolute;
 	width: 30%;
 	top: 60%;
@@ -325,6 +324,152 @@ header ul li a:hover {
 }
 
 /* <!---------------------------------------------------------------------------------------------- ALBUMS ----------------------------------------------------------------------------------------------> */
+.albums {
+	background-color: black;
+}
+
+.albums-header h1 {
+	color: white;
+	font-size: 8rem;
+	font-family: bebas neue;
+	text-align: center;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+}
+
+/*  38º */
+
+.albums-content-1 {
+	display: flex;
+}
+
+.albums-content-1-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+.cover {
+	border: 3px solid white;
+	background-repeat: no-repeat;
+}
+
+.albums .title {
+	position: absolute;
+	width: 100%;
+	font-size: 4rem;
+	font-weight: 600;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	top: -5%;
+	left: 87%;
+}
+
+.albums .description {
+	position: absolute;
+	font-size: 1.5rem;
+	top: 25%;
+	left: 15%;
+	transform: translate(85%, 25%);
+}
+
+.music {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.song {
+	position: relative;
+	margin-right: 2rem;
+	width: 30%;
+}
+
+.song1 {
+	top: 70%;
+	left: 70%;
+	transform: translate(55%, 0%);
+}
+
+.song2 {
+	top: 42%;
+	left: 110%;
+	transform: translate(70%, 0%);
+}
+
+.song3 {
+	top: 45%;
+	left: 70%;
+	transform: translate(55%, 0%);
+}
+
+.song4 {
+	top: 17%;
+	left: 110%;
+	transform: translate(70%, 0%);
+}
+
+.alone {
+	top: 37%;
+	left: 92%;
+	transform: translate(50%, -60%);
+}
+
+/* LNDP */
+
+.albums-content-2-container {
+	margin-top: 25rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+.song5 {
+	top: 20%;
+	left: 70%;
+	transform: translate(55%, 0%);
+}
+
+.song6 {
+	top: -8%;
+	left: 110%;
+	transform: translate(70%, 0%);
+}
+
+.song7 {
+	top: -5%;
+	left: 70%;
+	transform: translate(55%, 0%);
+}
+
+.song8 {
+	top: -33%;
+	left: 110%;
+	transform: translate(70%, 0%);
+}
+
+.song9 {
+	top: -30%;
+	left: 70%;
+	transform: translate(55%, 0%);
+}
+
+.song10{
+    top: -58%;
+	left: 110%;
+	transform: translate(70%, 0%);
+}
+
+/* LUNA 18 */
+
 /* <!---------------------------------------------------------------------------------------------- ON TOUR----------------------------------------------------------------------------------------------> */
 /* <!---------------------------------------------------------------------------------------------- CONTACT ---------------------------------------------------------------------------------------------> */
 /* <!---------------------------------------------------------------------------------------------- FOOOTER----------------------------------------------------------------------------------------------> */
