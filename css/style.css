@@ -87,13 +87,14 @@ header ul li a:hover {
 .name h1 {
 	margin: 0;
 	font-size: 8rem;
+	font-weight: 400;
 	font-family: Another Danger;
 }
 
 .name p {
 	margin: 0;
 	font-size: 1.05rem;
-    font-style: italic;
+	font-style: italic;
 	padding-left: 0.5rem;
 }
 
@@ -109,9 +110,9 @@ header ul li a:hover {
 	text-align: center;
 	width: max-content;
 	font-family: inter;
-    font-size: 1.2rem;
-    font-weight: 600;
-	margin-right:0.5rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-right: 0.5rem;
 	border-radius: 5px;
 }
 
@@ -161,35 +162,86 @@ header ul li a:hover {
 
 /* <!---------------------------------------------------------------------------------------------- BIOGRAPHY -------------------------------------------------------------------------------------------> */
 
-.biography{
-    background-color: #333333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.biography {
+	background-color: #333333;
+	justify-content: center;
+	align-items: center;
 }
 
-.biography-content{
-    width: 50%;
-    height: 100vh;
-
-    display: grid;
-    align-items: center;
-    justify-content: center;
+.biography-content {
+	display: grid;
+	align-items: center;
+	justify-content: center;
 }
 
-.biography-content h1{
-    color: white;
-    font-size: 8rem;
-    font-family: bebas neue;
-    text-align: center;
+.biography-header h1 {
+	color: white;
+	font-size: 8rem;
+	font-family: bebas neue;
+	text-align: center;
 }
 
-.biography-content img{
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+.biography-content-1 h3 {
+	font-size: 2.5rem;
+	font-family: inter;
+	font-weight: 600;
+	padding-left: 3rem;
+	padding-bottom: 1rem;
 }
 
+.biography-content-1 {
+	position: relative;
+}
+
+.biography-content-1 .img-bio {
+    background-image: url(/assets/img/mirando\ a\ la\ derecha.png);
+    background-size: cover;
+}
+
+.texto {
+	font-size: 1.2rem;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.biography-content-1 .texto p:nth-child(1) {
+	position: absolute;
+	width: 30%;
+	top: 30%;
+	left: 15%;
+	transform: translate(-40%, -30%);
+}
+
+.biography-content-1 .texto p:nth-child(2) {
+	position: absolute;
+	width: 30%;
+	top: 30%;
+	left: 75%;
+	transform: translate(-40%, -30%);
+}
+
+/* Biography-content-2 */
+
+.biography-content-2 {
+    position: relative;
+}
+
+.biography-content-2 h3{
+	font-size: 2.5rem;
+	font-family: inter;
+	font-weight: 600;
+    margin-top: 2rem;
+	padding-right: 3rem;
+	padding-bottom: 1rem;
+    text-align: end;
+}
+
+.biography-content-2 .img-bio {
+    background-image: url(/assets/img/mirando\ a\ la\ derecha.png);
+}
+
+.biography-content-2 .texto {
+    position: absolute;
+}
 
 /* <!---------------------------------------------------------------------------------------------- ALBUMS ----------------------------------------------------------------------------------------------> */
 /* <!---------------------------------------------------------------------------------------------- ON TOUR----------------------------------------------------------------------------------------------> */
