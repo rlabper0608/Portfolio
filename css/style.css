@@ -233,8 +233,10 @@ header ul li a:hover {
 	text-align: end;
 }
 
-.biography-content-2 .img-bio2 {
-	margin-left: 4rem;
+.biography-content-2-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .biography-content-2 .texto {
@@ -250,6 +252,76 @@ header ul li a:hover {
 	max-width: 100%;
 	height: auto;
 	display: block;
+    margin-bottom: 2rem;
+}
+
+/* Biography-content-3 */
+
+.biography-content-3{
+    position: relative;
+    height: 90vh;
+    margin-bottom:2rem;
+}
+
+.biography-content-3 h3 {
+	font-size: 2.5rem;
+	font-family: inter;
+	font-weight: 600;
+	margin-top: 2rem;
+	padding-left: 3rem;
+	padding-bottom: 2rem;
+}
+
+.biography-content-3-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.biography-content-3 .texto p{
+    font-size: 1.5rem;
+}
+
+.biography-content-3 .texto p:nth-child(1) {
+	position: absolute;
+	width: 25%;
+	top: 40%;
+	left: 15%;
+	transform: translate(-40%, -30%);
+}
+
+.biography-content-3 .texto p:nth-child(2) {
+	position: absolute;
+	width: 25%;
+	top: 40%;
+	left: 80%;
+	transform: translate(-40%, -30%);
+}
+
+/* Biography-content-4 */
+
+.biography-content-4{
+    position: relative;
+    height: 100vh;
+    margin-bottom:2rem;
+}
+
+.biography-content-4 h3 {
+	font-size: 2.5rem;
+	font-family: inter;
+	font-weight: 600;
+	margin-top: 2rem;
+	padding-left: 3rem;
+	padding-bottom: 2rem;
+}
+
+.biography-content-4 .texto {
+    font-size: 1.5rem;
+	position: absolute;
+	width: 30%;
+	top: 60%;
+	left: 20%;
+	transform: translate(-40%, -30%);
 }
 
 /* <!---------------------------------------------------------------------------------------------- ALBUMS ----------------------------------------------------------------------------------------------> */
