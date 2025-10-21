@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: "Another Danger";
-	src: url("/assets/fonts/Another Danger - Demo.otf");
+	src: url("../assets/fonts/Another Danger - Demo.otf");
 }
 
 * {
@@ -26,7 +26,7 @@ body {
 /* <!---------------------------------------------------------------------------------------------- HERO ------------------------------------------------------------------------------------------------> */
 .hero {
 	background-color: black;
-	background-image: url("/assets/img/rubio-entero_-fondo-negro.png");
+	background-image: url("../assets/img/rubio-entero_-fondo-negro.png");
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -318,7 +318,7 @@ header ul li a:hover {
 	font-size: 1.5rem;
 	position: absolute;
 	width: 30%;
-	top: 60%;
+	top: 50%;
 	left: 20%;
 	transform: translate(-40%, -30%);
 }
