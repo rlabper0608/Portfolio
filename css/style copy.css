@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+	font-family: "Another Danger";
+	src: url("/assets/fonts/Another Danger - Demo.otf");
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 200;
+	margin: 0;
+	padding: 0;
+	font-family: Inter;
+	overflow-x: hidden;
+}
+
+/* <!---------------------------------------------------------------------------------------------- HERO ------------------------------------------------------------------------------------------------> */
+.hero {
+	background-color: black;
+	background-image: url("/assets/img/rubio-entero_-fondo-negro.png");
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+/* <!---------------------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------------------------> */
+header {
+	height: 100px;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.logo {
+		flex: 1;
+		font-size: 2rem;
+		font-family: Another Danger;
+	}
+}
+
+nav {
+	flex: 1;
+
+	ul {
+		margin: 0;
+		padding-left: 4rem;
+		display: flex;
+		list-style: none;
+		justify-content: space-between;
+
+		li a {
+			text-transform: uppercase;
+			text-decoration: none;
+			color: white;
+			font-weight: 400;
+
+			&:hover {
+				cursor: pointer;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.hero-content {
+	width: 50%;
+	height: 100vh;
+
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.name {
+	/* border: 1px solid purple; */
+	padding-right: 12rem;
+	padding-top: 7rem;
+
+	h1 {
+		margin: 0;
+		font-size: 8rem;
+		font-weight: 400;
+		font-family: Another Danger;
+	}
+
+	p {
+		margin: 0;
+		font-size: 1.05rem;
+		font-style: italic;
+		padding-left: 0.5rem;
+	}
+}
+
+.btns {
+	margin-top: -9rem;
+	/* border: 1px solid green; */
+	display: flex;
+
+	.btn {
+		text-transform: uppercase;
+		padding: 0.5rem 2rem;
+		text-align: center;
+		width: max-content;
+		font-family: inter;
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-right: 0.5rem;
+		border-radius: 5px;
+	}
+
+	.btn-primary {
+		background-color: white;
+		color: black;
+		border: none;
+
+		&:hover {
+			cursor: pointer;
+			color: white;
+			background-color: black;
+			border: 1px solid white;
+		}
+	}
+
+	.btn-secondary {
+		background-color: transparent;
+		color: white;
+		border: 1px solid white;
+
+		&:hover {
+			cursor: pointer;
+			color: black;
+			background-color: white;
+			border: 1px solid white;
+		}
+	}
+}
+
+.social-media {
+	margin-top: -18rem;
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: start;
+	list-style-type: none;
+
+	li {
+		flex: 0 0 30px;
+		height: 40px;
+		margin-right: 1rem;
+	}
+
+	ul li a {
+		width: 30px;
+		height: 0px;
+	}
+}
+
+/* <!---------------------------------------------------------------------------------------------- BIOGRAPHY -------------------------------------------------------------------------------------------> */
+
+.biography {
+	background-color: #333333;
+	justify-content: center;
+	align-items: center;
+}
+
+.biography-content {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.biography-header h1 {
+	color: white;
+	font-size: 8rem;
+	font-family: bebas neue;
+	text-align: center;
+}
+
+.biography-content-1 {
+	position: relative;
+
+	h3 {
+		font-size: 2.5rem;
+		font-family: inter;
+		font-weight: 600;
+		padding-left: 3rem;
+		padding-bottom: 1rem;
+	}
+}
+
+.texto {
+	font-size: 1.2rem;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.biography-content-1 .texto p:nth-child(1) {
+	position: absolute;
+	width: 30%;
+	top: 30%;
+	left: 15%;
+	transform: translate(-40%, -30%);
+}
+
+.biography-content-1 .texto p:nth-child(2) {
+	position: absolute;
+	width: 30%;
+	top: 30%;
+	left: 75%;
+	transform: translate(-40%, -30%);
+}
+
+/* Biography-content-2 */
+
+.biography-content-2 {
+	position: relative;
+	height: 100vh;
+	margin-bottom: 4rem;
+
+	h3 {
+		font-size: 2.5rem;
+		font-family: inter;
+		font-weight: 600;
+		margin-top: 2rem;
+		padding-right: 3rem;
+		padding-bottom: 2rem;
+		text-align: end;
+	}
+
+	.texto {
+		position: absolute;
+		width: 30%;
+		top: 50%;
+		left: 70%;
+		transform: translate(-40%, -30%);
+	}
+}
+
+.biography-content-2-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Division */
+.image {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 2rem;
+}
+
+/* Biography-content-3 */
+
+.biography-content-3 {
+	position: relative;
+	height: 90vh;
+	margin-bottom: 2rem;
+
+	h3 {
+		font-size: 2.5rem;
+		font-family: inter;
+		font-weight: 600;
+		margin-top: 2rem;
+		padding-left: 3rem;
+		padding-bottom: 2rem;
+	}
+
+	.texto p {
+		font-size: 1.5rem;
+	}
+
+	p:nth-child(1) {
+		position: absolute;
+		width: 25%;
+		top: 40%;
+		left: 15%;
+		transform: translate(-40%, -30%);
+	}
+
+	p:nth-child(2) {
+		position: absolute;
+		width: 25%;
+		top: 40%;
+		left: 80%;
+		transform: translate(-40%, -30%);
+	}
+}
+
+.biography-content-3-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Biography-content-4 */
+
+.biography-content-4 {
+	position: relative;
+	margin-bottom: -0.5rem;
+
+	h3 {
+		font-size: 2.5rem;
+		font-family: inter;
+		font-weight: 600;
+		margin-top: 2rem;
+		padding-left: 3rem;
+		padding-bottom: 2rem;
+	}
+
+	.texto {
+		font-size: 1.5rem;
+		position: absolute;
+		width: 30%;
+		top: 60%;
+		left: 20%;
+		transform: translate(-40%, -30%);
+	}
+}
+
+/* <!---------------------------------------------------------------------------------------------- ALBUMS ----------------------------------------------------------------------------------------------> */
+.albums {
+	background-color: black;
+
+	.title {
+		position: absolute;
+		width: 100%;
+		font-size: 4rem;
+		font-weight: 600;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		top: -5%;
+		left: 87%;
+	}
+
+	.description {
+		position: absolute;
+		font-size: 1.5rem;
+		top: 25%;
+		left: 15%;
+		transform: translate(85%, 25%);
+	}
+}
+
+.albums-header h1 {
+	color: white;
+	font-size: 8rem;
+	font-family: bebas neue;
+	text-align: center;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+}
+
+/*  38º */
+
+.albums-content-1 {
+	display: flex;
+}
+
+.albums-content-1-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+.cover {
+	border: 3px solid white;
+	background-repeat: no-repeat;
+}
+
+.music {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.song {
+	position: relative;
+	margin-right: 2rem;
+	width: 30%;
+}
+
+.song1 {
+	top: 70%;
+	left: 70%;
+	transform: translate(55%, 0%);
+}
+
+.song2 {
+	top: 42%;
+	left: 110%;
+	transform: translate(70%, 0%);
+}
+
+.song3 {
+	top: 45%;
+	left: 70%;
+	transform: translate(55%, 0%);
+}
+
+.song4 {
+	top: 17%;
+	left: 110%;
+	transform: translate(70%, 0%);
+}
+
+.alone {
+	top: 37%;
+	left: 92%;
+	transform: translate(50%, -60%);
+}
+
+/* LNDP */
+
+.albums-content-2-container {
+	margin-top: 25rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+.song5 {
+	top: 20%;
+	left: 70%;
+	transform: translate(55%, 0%);
+}
+
+.song6 {
+	top: -8%;
+	left: 110%;
+	transform: translate(70%, 0%);
+}
+
+.song7 {
+	top: -5%;
+	left: 70%;
+	transform: translate(55%, 0%);
+}
+
+.song8 {
+	top: -33%;
+	left: 110%;
+	transform: translate(70%, 0%);
+}
+
+.song9 {
+	top: -30%;
+	left: 70%;
+	transform: translate(55%, 0%);
+}
+
+.song10 {
+	top: -58%;
+	left: 110%;
+	transform: translate(70%, 0%);
+}
+
+/* LUNA 18 */
+
+.albums-content-3-container {
+	margin-top: 45rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+.song11 {
+	top: -55%;
+	left: 70%;
+	transform: translate(55%, 0%);
+}
+
+.song12 {
+	top: -83%;
+	left: 110%;
+	transform: translate(70%, 0%);
+}
+
+/* LUNA 18 (DELUXE) */
+
+.albums-content-4-container {
+	margin-top: 52rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+/* Last Track */
+
+.albums-last-track-container {
+	margin-top: 20rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+
+	.title {
+		padding-top: 2rem;
+		padding-bottom: 5rem;
+		top: -5%;
+		left: 22%;
+	}
+}
+
+.video {
+	flex: 1;
+	margin-top: 5rem;
+	margin-left: 10rem;
+}
+
+.video-last-track {
+	width: 90%;
+	max-width: 800px;
+	border-radius: 20px;
+}
+
+.parte-derecha {
+	position: absolute;
+	margin-left: 70rem;
+}
+
+.song-title {
+	width: 250%;
+	font-size: 3rem;
+	font-weight: 600;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	transform: translate(0%, -100%);
+}
+
+.listen {
+	display: flex;
+
+	p {
+		font-size: 2rem;
+	}
+}
+
+.media {
+	display: flex;
+
+	.logo {
+		width: 90px;
+	}
+}
+
+.media-1 {
+	flex: 1;
+}
+
+.media-2 {
+	flex: 1;
+}
+
+/* <!---------------------------------------------------------------------------------------------- ON TOUR----------------------------------------------------------------------------------------------> */
+/* <!---------------------------------------------------------------------------------------------- CONTACT ---------------------------------------------------------------------------------------------> */
+/* <!---------------------------------------------------------------------------------------------- FOOOTER----------------------------------------------------------------------------------------------> */
