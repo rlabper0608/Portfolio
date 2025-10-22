@@ -386,6 +386,9 @@ nav {
 
 	.music-album {
 		position: relative;
+		width: 70%;
+		top: 70%;
+		left: 87%;
 	}
 }
 
