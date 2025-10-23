@@ -338,7 +338,7 @@ nav {
 
 	.description {
 		font-size: 1.5rem;
-		width:70%;
+		width: 70%;
 		padding: 3rem;
 	}
 }
@@ -355,20 +355,20 @@ nav {
 /*  38º */
 
 .albums-content-1 {
-	display:flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .albums-content-container {
-	flex:1;
+	flex: 1;
 }
 
 .cover {
-	margin-left:8rem;
-	flex:0.5;
+	margin-left: 8rem;
+	flex: 0.5;
 
-	img{
+	img {
 		border: 3px solid white;
 	}
 }
@@ -380,64 +380,57 @@ nav {
 	}
 }
 
-/* LNDP / LUNA 18 / LUNA 18 (DELUXE)  */ 
+/* LNDP / LUNA 18 / LUNA 18 (DELUXE)  */
 
 .albums-content-repeat {
-	display:flex;
+	display: flex;
 	margin-top: 10rem;
 }
 
 /* Last Track */
 
 .albums-last-track-container {
-	margin-top: 20rem;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	height: 100%;
+	margin-top: 13rem;
 
 	.title {
-		padding-top: 2rem;
-		padding-bottom: 5rem;
-		top: -5%;
-		left: 22%;
+		padding: 0 0 5rem 8rem;
 	}
 }
 
-.video {
-	flex: 1;
-	margin-top: 5rem;
+.video-walls {
+	display: flex;
 	margin-left: 10rem;
 }
 
 .video-last-track {
-	width: 90%;
-	max-width: 800px;
+	flex: 1;
+	max-width: 400px;
+	height: auto;
 	border-radius: 20px;
 }
 
 .parte-derecha {
-	position: absolute;
-	margin-left: 70rem;
+	flex: 1;
+	padding-left: 2rem;
 }
 
 .song-title {
-	width: 250%;
+	width: 100%;
 	font-size: 3rem;
 	font-weight: 600;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	transform: translate(0%, -100%);
+	padding-left: 3rem;
 }
 
-.listen {
+.listen,
+.show {
 	display: flex;
+	padding-top: 2rem;
+	padding-left: 3rem;
 
 	p {
 		font-size: 2rem;
+		font-weight: 600;
+		margin-right : -6rem;
 	}
 }
 
@@ -446,17 +439,28 @@ nav {
 
 	.logo {
 		width: 90px;
+		padding-top: 6rem;
+	}
+
+	.name {
+		font-size: 2rem;
+		font-weight: 400;
+		padding-left: 1rem;
 	}
 }
 
 .media-1 {
 	flex: 1;
+	display:flex;
 }
 
 .media-2 {
 	flex: 1;
+	display:flex;
 }
 
 /* <!---------------------------------------------------------------------------------------------- ON TOUR----------------------------------------------------------------------------------------------> */
+
+
 /* <!---------------------------------------------------------------------------------------------- CONTACT ---------------------------------------------------------------------------------------------> */
 /* <!---------------------------------------------------------------------------------------------- FOOOTER----------------------------------------------------------------------------------------------> */
