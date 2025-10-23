@@ -328,24 +328,18 @@ nav {
 /* <!---------------------------------------------------------------------------------------------- ALBUMS ----------------------------------------------------------------------------------------------> */
 .albums {
 	background-color: black;
+	height: 100%;
 
 	.title {
-		position: absolute;
-		width: 100%;
 		font-size: 4rem;
 		font-weight: 600;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-		top: -5%;
-		left: 87%;
+		padding-left: 3rem;
 	}
 
 	.description {
-		position: absolute;
 		font-size: 1.5rem;
-		top: 25%;
-		left: 15%;
-		transform: translate(85%, 25%);
+		width:70%;
+		padding: 3rem;
 	}
 }
 
@@ -361,74 +355,36 @@ nav {
 /*  38º */
 
 .albums-content-1 {
-	display: flex;
-}
-
-.albums-content-1-container {
-	position: relative;
-	display: flex;
-	flex-direction: column;
+	display:flex;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
-	height: 100%;
+}
+
+.albums-content-container {
+	flex:1;
 }
 
 .cover {
-	border: 3px solid white;
-	background-repeat: no-repeat;
-}
+	margin-left:8rem;
+	flex:0.5;
 
-.music {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-
-	.music-album {
-		position: relative;
-		width: 70%;
-		top: 70%;
-		left: 87%;
+	img{
+		border: 3px solid white;
 	}
 }
 
-/* LNDP */
-
-.albums-content-2-container {
-	margin-top: 25rem;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	height: 100%;
+.music {
+	padding-left: 3rem;
+	.music-album {
+		width: 55%;
+	}
 }
 
-/* LUNA 18 */
+/* LNDP / LUNA 18 / LUNA 18 (DELUXE)  */ 
 
-.albums-content-3-container {
-	margin-top: 45rem;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	height: 100%;
-}
-
-/* LUNA 18 (DELUXE) */
-
-.albums-content-4-container {
-	margin-top: 52rem;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	height: 100%;
+.albums-content-repeat {
+	display:flex;
+	margin-top: 10rem;
 }
 
 /* Last Track */
