@@ -3,6 +3,8 @@
 @font-face {
 	font-family: "Another Danger";
 	src: url("/assets/fonts/Another Danger - Demo.otf");
+	src: url("/assets/fonts/another_danger_-_demo-webfont.woff");
+	src: url("/assets/fonts/another_danger_-_demo-webfont.woff2");
 }
 
 * {
@@ -350,6 +352,7 @@ nav {
 	text-align: center;
 	padding-top: 4rem;
 	padding-bottom: 3rem;
+	text-transform: uppercase;
 }
 
 /*  38º */
@@ -391,6 +394,7 @@ nav {
 
 .albums-last-track-container {
 	margin-top: 13rem;
+	padding-bottom: 4rem;
 
 	.title {
 		padding: 0 0 5rem 8rem;
@@ -430,7 +434,7 @@ nav {
 	p {
 		font-size: 2rem;
 		font-weight: 600;
-		margin-right : -6rem;
+		margin-right: -6rem;
 	}
 }
 
@@ -451,16 +455,84 @@ nav {
 
 .media-1 {
 	flex: 1;
-	display:flex;
+	display: flex;
 }
 
 .media-2 {
 	flex: 1;
-	display:flex;
+	display: flex;
 }
 
 /* <!---------------------------------------------------------------------------------------------- ON TOUR----------------------------------------------------------------------------------------------> */
 
+.on-tour {
+	background-color: #333333;
+}
+
+.on-tour-header {
+	color: white;
+	font-size: 5rem;
+	font-family: bebas neue;
+	text-align: center;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+	text-transform: uppercase;
+}
+
+.carteles {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.izq,
+.der {
+	flex: 1;
+	height: auto;
+
+	opacity: 0.5;
+
+	img {
+		width: 400px;
+		height: auto;
+	}
+}
+
+.izq {
+	display: flex;
+	justify-content: end;
+	align-items: end;
+}
+
+.centro {
+	flex: 1;
+	margin-left: 2rem;
+	margin-right: 2rem;
+
+	img {
+		width: 750px;
+		height: auto;
+	}
+}
+
+.der {
+	img{
+		margin-top: 10rem;
+	}
+
+	.texto {
+		color: #C62828;
+		font-size: 4rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		width: 70%;
+		text-align: center;
+
+		position: relative;
+		right: -3%;
+		transform: translate(0%,-170%);
+	}
+}
 
 /* <!---------------------------------------------------------------------------------------------- CONTACT ---------------------------------------------------------------------------------------------> */
 /* <!---------------------------------------------------------------------------------------------- FOOOTER----------------------------------------------------------------------------------------------> */
