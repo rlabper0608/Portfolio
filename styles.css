@@ -640,7 +640,27 @@ nav {
 	}
 
 	.tickets {
+		display: grid;
+		align-items: center;
+		justify-content: center;
 
+		.fecha-compra {
+			color: var(--light);
+			font-size: 3rem;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.tickets-content {
+			margin: 0.5rem;
+
+			.rectangle {
+				display: flex;
+				width: 100%;
+				background-color: var(--carmesi);
+				height: 10vh;
+			}
+		}
 	}
 }
 
