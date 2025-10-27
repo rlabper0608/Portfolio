@@ -36,13 +36,9 @@ body {
 
 /* <!---------------------------------------------------------------------------------------------- HERO ------------------------------------------------------------------------------------------------> */
 .hero {
-<<<<<<< HEAD
 	background-color: var(--dark);
-	background-image: url("/assets/img/rubio-entero_-fondo-negro.png");
-=======
 	background-color: black;
 	background-image: url("assets/img/rubio-entero_-fondo-negro.png");
->>>>>>> 057f9ce1c17a0de69be39d5dd95a537f4350cf0c
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
