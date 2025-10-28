@@ -638,6 +638,7 @@ nav {
 	}
 
 	.tickets-section {
+		padding-bottom: 3rem;
 		.tickets {
 			text-align: center;
 
@@ -729,6 +730,7 @@ nav {
 	}
 
 	.merchandising {
+		background-color: var(--dark);
 		.merch-title {
 			text-align: center;
 			align-items: center;
@@ -742,7 +744,11 @@ nav {
 
 		.merch-content {
 			.merch-row {
+				display: flex;
 				.merch {
+					/* background-color: var(--dark-25); */
+					flex: 1;
+					gap: 6rem;
 					.merch-img {
 						img {
 							width: 324px;
@@ -753,6 +759,9 @@ nav {
 
 					.merch-info {
 						.merch-info-title {
+							font-size: 2rem;
+							font-weight: 400;
+							padding: 1rem 0rem;
 						}
 					}
 				}
