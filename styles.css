@@ -745,7 +745,15 @@ nav {
 		.merch-content {
 			.merch-row {
 				display: flex;
+				.merch-izquierda {
+					flex: 1;
+				}
+				.merch-derecha {
+					flex: 1;
+				}
+
 				.merch {
+					
 					/* background-color: var(--dark-25); */
 					flex: 1;
 					gap: 6rem;
