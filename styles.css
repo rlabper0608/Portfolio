@@ -563,6 +563,7 @@ nav {
 		display: flex;
 		margin-bottom: 2rem;
 		padding-bottom: 3rem;
+		gap: 6rem;
 	}
 
 	.card {
@@ -630,7 +631,6 @@ nav {
 
 	.card-left {
 		margin-left: 5rem;
-		margin-right: 15rem;
 	}
 
 	.card-right {
@@ -650,43 +650,109 @@ nav {
 			}
 
 			.tickets-content {
-				display: flex;
+				display: grid;
 				margin: 0.5rem;
 				justify-content: center;
 				align-items: center;
+				gap: 2rem;
 
 				.rectangle {
 					width: 80vw;
-					height: 10vh;
-
+					height: 12vh;
 					background-color: var(--carmesi);
 
-					.texto {
+					display: flex;
+
+					.izquierda {
+						flex: 1;
 						text-align: left;
+						margin-left: 3rem;
+						margin-top: 1rem;
+						font-size: 1.3rem;
+						text-shadow: none;
+
+						p {
+							padding-bottom: 0.5rem;
+							font-weight: 400;
+						}
+
+						p:nth-child(2) {
+							color: var(--dark-25);
+						}
 					}
 
-					.cuenta,
-					.btns {
+					.cuenta {
+						flex: 3;
+
 						display: flex;
-						flex-direction: column;
-						align-items: flex-end;
+						text-align: end;
+						justify-content: end;
+						align-items: center;
+
+						font-weight: 600;
 						gap: 5px;
 					}
 
 					.btns {
-						flex-direction: row;
-						gap: 10px;
+						height: 255%;
+						flex: 1;
+						justify-content: end;
+						align-items: end;
+						gap: 0.5rem;
+
+						padding-right: 4rem;
+						padding-bottom: 1.8rem;
+						margin-left: -10rem;
 
 						button {
 							background: var(--light);
 							color: var(--dark);
 							border: none;
 							border-radius: 50%;
-							width: 25px;
-							height: 25px;
-							cursor: pointer;
-							font-weight: bold;
-							transition: 0.2s;
+							width: 40px;
+							height: 40px;
+							font-size: 1.5rem;
+							font-weight: 400;
+							flex-direction: column;
+							justify-content: flex-end;
+
+							&:hover {
+								cursor: pointer;
+								color: var(--light);
+								background-color: var(--dark);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.merchandising {
+		.merch-title {
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			padding-top: 3rem;
+			font-size: 6rem;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-family: bebas neue;
+		}
+
+		.merch-content {
+			.merch-row {
+				.merch {
+					.merch-img {
+						img {
+							width: 324px;
+							height: 324px;
+							border: 5px solid var(--light);
+						}
+					}
+
+					.merch-info {
+						.merch-info-title {
 						}
 					}
 				}
