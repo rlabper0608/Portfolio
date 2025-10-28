@@ -17,7 +17,7 @@
 	--light: rgba(255, 255, 255, 1);
 	--dark: rgba(0, 0, 0, 1);
 	--dark-75: #333333;
-	--dark-50:#4d4d4d;
+	--dark-50: #4d4d4d;
 	--dark-25: #999999;
 	--carmesi: #c62828;
 
@@ -169,7 +169,6 @@ nav {
 		height: 40px;
 		margin-right: 1rem;
 	}
-
 }
 
 /* <!---------------------------------------------------------------------------------------------- BIOGRAPHY -------------------------------------------------------------------------------------------> */
@@ -562,12 +561,12 @@ nav {
 
 	.card-row {
 		display: flex;
-		margin-bottom:2rem;
+		margin-bottom: 2rem;
 		padding-bottom: 3rem;
 	}
 
 	.card {
-		flex:1;	
+		flex: 1;
 		background-color: var(--dark-25);
 		border-radius: 5px;
 		padding: 0.5rem;
@@ -579,11 +578,11 @@ nav {
 		}
 
 		.card-content {
-			display:flex;
+			display: flex;
 
 			.fecha {
 				width: 10%;
-				flex:1;
+				flex: 1;
 				font-size: 2rem;
 				padding-left: 2rem;
 				text-align: center;
@@ -591,8 +590,8 @@ nav {
 			}
 
 			.parte-derecha {
-				flex:4;
-				font-size:1.5rem;
+				flex: 4;
+				font-size: 1.5rem;
 				.time {
 					font-weight: 600;
 					padding-top: 0.2rem;
@@ -626,47 +625,75 @@ nav {
 					color: var(--dark);
 				}
 			}
-			
 		}
 	}
 
 	.card-left {
-		margin-left:5rem;
-		margin-right:15rem;
+		margin-left: 5rem;
+		margin-right: 15rem;
 	}
 
 	.card-right {
-		margin-right:5rem;
+		margin-right: 5rem;
 	}
 
-	.tickets {
-		display: grid;
-		align-items: center;
-		justify-content: center;
+	.tickets-section {
+		.tickets {
+			text-align: center;
 
-		.fecha-compra {
-			color: var(--light);
-			font-size: 3rem;
-			align-items: center;
-			justify-content: center;
-		}
+			.fecha-concierto {
+				color: var(--light);
+				font-size: 3rem;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 2rem;
+			}
 
-		.tickets-content {
-			margin: 0.5rem;
-			
-
-			.rectangle {
+			.tickets-content {
 				display: flex;
-				width: 100%;
-				background-color: var(--carmesi);
-				height: 10vh;
+				margin: 0.5rem;
+				justify-content: center;
+				align-items: center;
+
+				.rectangle {
+					width: 80vw;
+					height: 10vh;
+
+					background-color: var(--carmesi);
+
+					.texto {
+						text-align: left;
+					}
+
+					.cuenta,
+					.btns {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-end;
+						gap: 5px;
+					}
+
+					.btns {
+						flex-direction: row;
+						gap: 10px;
+
+						button {
+							background: var(--light);
+							color: var(--dark);
+							border: none;
+							border-radius: 50%;
+							width: 25px;
+							height: 25px;
+							cursor: pointer;
+							font-weight: bold;
+							transition: 0.2s;
+						}
+					}
+				}
 			}
 		}
 	}
 }
-
-
-
 
 /* <!---------------------------------------------------------------------------------------------- CONTACT ---------------------------------------------------------------------------------------------> */
 /* <!---------------------------------------------------------------------------------------------- FOOOTER----------------------------------------------------------------------------------------------> */
