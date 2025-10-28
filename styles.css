@@ -743,33 +743,96 @@ nav {
 		}
 
 		.merch-content {
+			height: 200vh;
 			.merch-row {
 				display: flex;
-				.merch-izquierda {
-					flex: 1;
-				}
+				justify-content: center;
+				align-items: center;
+				gap: 10rem;
+
+				margin-bottom: 15rem;
+
 				.merch-derecha {
 					flex: 1;
 				}
 
-				.merch {
-					
-					/* background-color: var(--dark-25); */
+				.merch-izquierda {
 					flex: 1;
-					gap: 6rem;
+					margin-left: 8rem;
+				}
+
+				.merch {
+					width: 30vw;
+					height: 70vh;
+					/* background-color: var(--dark-25); */
+					border-radius: 5px;
+					flex: 1;
+
 					.merch-img {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+						padding-top: 2rem;
+
 						img {
-							width: 324px;
-							height: 324px;
+							width: 524px;
+							height: 524px;
 							border: 5px solid var(--light);
 						}
 					}
 
 					.merch-info {
+						display:grid;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+
 						.merch-info-title {
-							font-size: 2rem;
+							font-size: 3rem;
 							font-weight: 400;
 							padding: 1rem 0rem;
+						}
+
+						.merch-description {
+							font-size: 2.5rem;
+							padding-bottom: 1rem;
+							justify-content: center;
+						}
+
+						.merch-price {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+							.merch-price-number {
+								flex: 1;
+								text-align: start;
+								font-size:1.5rem;
+							}
+
+							.merch-button {
+								flex: 1;
+								display: flex;
+								justify-content: end;
+
+								button {
+									background-color: var(--carmesi);
+									color: var(--light);
+									border-radius: 5px;
+									border: none;
+									text-transform: uppercase;
+									padding: 0.7rem 1rem;
+									font-size: 1.5rem;
+									font-weight: 600;
+
+									&:hover {
+										cursor: pointer;
+										background-color: var(--light);
+										color: var(--dark);
+									}
+								}
+							}
 						}
 					}
 				}
