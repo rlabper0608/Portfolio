@@ -7,6 +7,13 @@
 	src: url("assets/fonts/another_danger_-_demo-webfont.woff2");
 }
 
+@font-face {
+	font-family: "Another Danger Slanted";
+	src: url(assets/fonts/Another\ Danger\ Slanted\ -\ Demo.otf);
+	src: url(assets/fonts/another_danger_slanted_-_demo-webfont.woff2);
+	src: url(assets/fonts/another_danger_slanted_-_demo-webfont.woff);
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -142,7 +149,9 @@ nav {
 			border: 1px solid var(--light);
 		}
 	}
-
+	a {
+		color:var(--light);
+	}
 	.btn-secondary {
 		background-color: transparent;
 		color: var(--light);
@@ -882,16 +891,19 @@ nav {
 		}
 
 		input[type="text"] {
-			border: none;
-			height: 1.5rem;
-			font-family: inter;
-			&:focus {
-				border: 1px solid var(--carmesi);
-			}
+			border:1px solid var(--carmesi);
+			height: 2.5rem;
+			font-family: Inter;
+			color: var(--dark);
+			font-size: 1.2rem;
 		}
 
 		textarea {
-			height: 150px;
+			border:1px solid var(--carmesi);
+			height: 10rem;
+			font-family: Inter;
+			color: var(--dark);
+			font-size: 1.2rem;
 		}
 
 		.enviar {
@@ -943,6 +955,7 @@ nav {
 	}
 }
 
+/* <!---------------------------------------------------------------------------------------------- FOOOTER----------------------------------------------------------------------------------------------> */
 footer {
 	position: relative;
 	.fondo {
@@ -963,16 +976,26 @@ footer {
 	}
 
 	.social-media-footer {
-		
+		position: absolute;
+		top:55%;
+		left:10%;
+		.social {
+			display:flex;
+			gap:0.7rem;
+			list-style-type: none;
+			li {
+				width: 3vw;
+			}
+		}
 	}
 
 	.copyright {
-		padding: 0.5rem;
+		display: flex;
+		padding: 0.5rem 1rem;
 		font-size: 1rem;
 		width: 100%;
 		bottom: 0%;
 		background-color: var(--dark-75);
+		justify-content: space-between;
 	}
 }
-
-/* <!---------------------------------------------------------------------------------------------- FOOOTER----------------------------------------------------------------------------------------------> */
