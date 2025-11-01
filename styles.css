@@ -7,13 +7,6 @@
 	src: url("assets/fonts/another_danger_-_demo-webfont.woff2");
 }
 
-@font-face {
-	font-family: "Another Danger Slanted";
-	src: url(assets/fonts/Another\ Danger\ Slanted\ -\ Demo.otf);
-	src: url(assets/fonts/another_danger_slanted_-_demo-webfont.woff2);
-	src: url(assets/fonts/another_danger_slanted_-_demo-webfont.woff);
-}
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -28,7 +21,8 @@
 	--dark-25: #999999;
 	--carmesi: #c62828;
 
-	--h1-size: 8rem;
+	--h1-size: 5rem;
+	--name-size: 8rem;
 }
 
 html,
@@ -62,12 +56,75 @@ body {
 	}
 }
 
+/* Constantes */
+
+h1 {
+	color: var(--light);
+	font-size: var(--h1-size);
+	font-family: bebas neue;
+	text-align: center;
+	font-weight: 200;
+	text-transform: uppercase;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+	font-family: inter;
+	font-weight: 600;
+	padding-left: 3rem;
+	padding-bottom: 2rem;
+}
+
+.btn {
+	text-transform: uppercase;
+	padding: 0.5rem 2rem;
+	text-align: center;
+	width: max-content;
+	font-family: inter;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-right: 0.5rem;
+	border-radius: 5px;
+	transition: ease-out 0.5s;
+
+	&:hover {
+		box-shadow: inset 0 -100px 0 0 var(--carmesi);
+	}
+}
+
+.btn-primary {
+	background-color: var(--light);
+	color: var(--dark);
+	border: none;
+
+	&:hover {
+		cursor: pointer;
+		color: var(--light);
+		background-color: var(--carmesi);
+	}
+}
+
+.btn-secondary {
+	background-color: transparent;
+	color: var(--light);
+	border: 1px solid var(--light);
+
+	&:hover {
+		cursor: pointer;
+		color: var(--black);
+		background-color: var(--carmesi);
+		border: 1px solid var(--light);
+	}
+}
+
 /* <!---------------------------------------------------------------------------------------------- HERO ------------------------------------------------------------------------------------------------> */
 .hero {
 	background-color: var(--dark);
 }
 
-/* <!---------------------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------------------------> */
+/* <!---------------------------------- HEADER -----------------------------------------------> */
 .logo {
 	flex: 1;
 	font-size: 2rem;
@@ -75,7 +132,6 @@ body {
 }
 
 header {
-	border: 1px solid red;
 	height: 100px;
 	padding: 1.25rem 2.5rem;
 	display: flex;
@@ -100,6 +156,7 @@ nav {
 			font-weight: 400;
 
 			&:hover {
+				color: var(--carmesi);
 				cursor: pointer;
 				font-weight: 600;
 			}
@@ -120,10 +177,10 @@ nav {
 	padding-left: 6rem;
 	gap: 1.5rem;
 
-	.name {
-		h1 {
+	.name-song {
+		.name {
 			margin: 0;
-			font-size: var(--h1-size);
+			font-size: var(--name-size);
 			font-weight: 400;
 			font-family: Another Danger;
 		}
@@ -140,50 +197,8 @@ nav {
 .btns {
 	display: flex;
 
-	.btn {
-		text-transform: uppercase;
-		padding: 0.5rem 2rem;
-		text-align: center;
-		width: max-content;
-		font-family: inter;
-		font-size: 1.2rem;
-		font-weight: 600;
-		margin-right: 0.5rem;
-		border-radius: 5px;
-		transition: ease-out 0.5s;
-
-		&:hover {
-			box-shadow: inset 0 -100px 0 0 var(--carmesi);
-		}
-	}
-
-	.btn-primary {
-		background-color: var(--light);
-		color: var(--dark);
-		border: none;
-
-		&:hover {
-			cursor: pointer;
-			color: var(--light);
-			background-color: var(--carmesi);
-			border: 1px solid var(--light);
-		}
-	}
-
 	a {
 		color: var(--light);
-	}
-	.btn-secondary {
-		background-color: transparent;
-		color: var(--light);
-		border: 1px solid var(--light);
-
-		&:hover {
-			cursor: pointer;
-			color: var(--black);
-			background-color: var(--carmesi);
-			border: 1px solid var(--light);
-		}
 	}
 }
 
@@ -193,8 +208,8 @@ nav {
 	list-style-type: none;
 
 	li {
-		flex: 0 0 30px;
-		height: 40px;
+		/* flex: 0 0 30px; */
+		width: 1.5vw;
 		margin-right: 1rem;
 	}
 }
@@ -214,24 +229,8 @@ nav {
 	justify-content: center;
 }
 
-.biography-header h1 {
-	color: var(--light);
-	font-size: var(--h1-size);
-	font-family: bebas neue;
-	text-align: center;
-	font-weight: 200;
-}
-
 .biography-content-1 {
 	position: relative;
-
-	h3 {
-		font-size: 2.5rem;
-		font-family: inter;
-		font-weight: 600;
-		padding-left: 3rem;
-		padding-bottom: 1rem;
-	}
 }
 
 .texto {
@@ -263,12 +262,8 @@ nav {
 	margin-bottom: 4rem;
 
 	h3 {
-		font-size: 2.5rem;
-		font-family: inter;
-		font-weight: 600;
 		margin-top: 2rem;
 		padding-right: 3rem;
-		padding-bottom: 2rem;
 		text-align: end;
 	}
 
@@ -289,7 +284,7 @@ nav {
 
 /* Division */
 .image {
-	width: 100%;
+	width: 1920px;
 	height: 1080px;
 	margin-bottom: 2rem;
 	background-image: url("assets/img/division.jpg");
@@ -306,12 +301,7 @@ nav {
 	position: relative;
 
 	h3 {
-		font-size: 2.5rem;
-		font-family: inter;
-		font-weight: 600;
 		margin-top: 2rem;
-		padding-left: 3rem;
-		padding-bottom: 2rem;
 	}
 
 	.texto p {
@@ -342,15 +332,6 @@ nav {
 	position: relative;
 	margin-bottom: -0.5rem;
 
-	h3 {
-		font-size: 2.5rem;
-		font-family: inter;
-		font-weight: 600;
-		margin-top: 2rem;
-		padding-left: 3rem;
-		padding-bottom: 2rem;
-	}
-
 	.texto {
 		font-size: 1.5rem;
 		position: absolute;
@@ -377,144 +358,138 @@ nav {
 		width: 70%;
 		padding: 3rem;
 	}
-}
 
-.albums-header h1 {
-	color: var(--light);
-	font-size: var(--h1-size);
-	font-family: bebas neue;
-	font-weight: 200;
-	text-align: center;
-	padding-top: 4rem;
-	padding-bottom: 3rem;
-	text-transform: uppercase;
-}
+	/*  38º */
 
-/*  38º */
-
-.albums-content-1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.albums-content-container {
-	flex: 1;
-}
-
-.cover {
-	margin-left: 8rem;
-	flex: 0.5;
-
-	img {
-		border: 3px solid var(--light);
-	}
-}
-
-.music {
-	padding-left: 3rem;
-	.music-album {
-		width: 55%;
-	}
-}
-
-/* LNDP / LUNA 18 / LUNA 18 (DELUXE)  */
-
-.albums-content-repeat {
-	display: flex;
-	margin-top: 10rem;
-}
-
-/* Last Track */
-
-.albums-last-track-container {
-	margin-top: 13rem;
-	padding-bottom: 4rem;
-
-	.title {
-		padding: 0 0 5rem 8rem;
-	}
-}
-
-.video-walls {
-	display: flex;
-	margin-left: 10rem;
-}
-
-.video-last-track {
-	flex: 1;
-	max-width: 400px;
-	height: auto;
-	border-radius: 20px;
-}
-
-.parte-derecha {
-	flex: 1;
-	padding-left: 2rem;
-}
-
-.song-title {
-	width: 100%;
-	font-size: 3rem;
-	font-weight: 600;
-	padding-left: 3rem;
-}
-
-.listen,
-.show {
-	display: flex;
-	padding-top: 2rem;
-	padding-left: 3rem;
-
-	p {
-		font-size: 2rem;
-		font-weight: 600;
-		margin-right: -6rem;
-	}
-}
-
-.media {
-	display: flex;
-
-	.logo {
-		width: 90px;
-		padding-top: 6rem;
+	.albums-content-1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.name {
-		font-size: 2rem;
-		font-weight: 400;
-		padding-left: 1rem;
+	.albums-content-container {
+		flex: 1;
 	}
-}
 
-.media-1 {
-	flex: 1;
-	display: flex;
-}
+	.cover {
+		margin-left: 8rem;
+		flex: 0.5;
 
-.media-2 {
-	flex: 1;
-	display: flex;
+		img {
+			border: 3px solid var(--light);
+		}
+	}
+
+	.music {
+		padding-left: 3rem;
+		.music-album {
+			width: 55%;
+		}
+	}
+
+	/* LNDP / LUNA 18 / LUNA 18 (DELUXE)  */
+
+	.albums-content-repeat {
+		display: flex;
+		margin-top: 10rem;
+
+		.music {
+			.music-album {
+				.songs {
+					width: 50vw;
+					height: auto;
+					display:flex;
+					flex-flow: row wrap; 
+					gap:2rem;
+					.song {
+						width: 45%;
+					} 
+				}
+			}
+		}
+	}
+
+	/* Last Track */
+
+	.albums-last-track-container {
+		margin-top: 3rem;
+		padding-bottom: 3rem;
+
+		.title {
+			padding: 0 0 3rem 8rem;
+		}
+
+		.video-walls {
+			display: flex;
+			margin-left: 10rem;
+
+			.video-last-track {
+				flex: 1;
+				max-width: 400px;
+				height: auto;
+				border-radius: 20px;
+			}
+		}
+
+		.parte-derecha {
+			flex: 1;
+			padding-left: 2rem;
+
+			.song-title {
+				width: 100%;
+				font-size: 3rem;
+				font-weight: 600;
+				padding-left: 3rem;
+			}
+
+			.listen,
+			.show {
+				display: flex;
+				padding-top: 2rem;
+				padding-left: 3rem;
+
+				p {
+					font-size: 2rem;
+					font-weight: 600;
+					margin-right: -6rem;
+				}
+
+				.media {
+					display: flex;
+
+					.logo {
+						width: 90px;
+						padding-top: 6rem;
+					}
+
+					.name {
+						height: 30px;
+						font-size: 2rem;
+						font-weight: 400;
+						padding-left: 1rem;
+						padding-top: 7rem;
+						padding-right: 3rem;
+					}
+
+					.media-1 {
+						flex: 1;
+						display: flex;
+					}
+
+					.media-2 {
+						flex: 1;
+						display: flex;
+					}
+				}
+			}
+		}
+	}
 }
 
 /* <!---------------------------------------------------------------------------------------------- ON TOUR----------------------------------------------------------------------------------------------> */
 
 .on-tour {
 	background-color: var(--dark-75);
-
-	.on-tour-header {
-		h1 {
-			color: var(--light);
-			font-size: var(--h1-size);
-			font-family: bebas neue;
-			font-weight: 200;
-			text-align: center;
-			padding-top: 4rem;
-			padding-bottom: 3rem;
-			text-transform: uppercase;
-		}
-	}
 
 	.carteles {
 		display: flex;
@@ -525,12 +500,14 @@ nav {
 	.izq,
 	.der {
 		flex: 1;
-		height: auto;
+
+		display: flex;
+		align-items: center;
 
 		opacity: 0.5;
 
 		img {
-			width: 400px;
+			width: 200px;
 			height: auto;
 		}
 	}
@@ -544,30 +521,25 @@ nav {
 	.centro {
 		flex: 1;
 		margin-left: 2rem;
-		margin-right: 2rem;
-
+		margin-right: -10rem;
 		img {
-			width: 750px;
+			width: 450px;
 			height: auto;
 		}
 	}
 
 	.der {
-		img {
-			margin-top: 10rem;
-		}
+		position: relative;
 
 		.texto {
+			position: absolute;
 			color: var(--carmesi);
-			font-size: 4rem;
+			font-size: 2rem;
 			font-weight: 600;
 			text-transform: uppercase;
-			width: 70%;
+			width: 30%;
 			text-align: center;
-
-			position: relative;
-			right: -3%;
-			transform: translate(0%, -170%);
+			left: 1.5%;
 		}
 	}
 }
@@ -575,30 +547,30 @@ nav {
 .shows {
 	.title {
 		color: var(--light);
-		font-size: 4rem;
+		font-size: 3rem;
 		font-weight: 400;
-		padding: 3rem 0rem 3rem 3rem;
+		padding: 3rem 0rem 3rem 5rem;
 		text-transform: uppercase;
 		font-family: Bebas Neue;
 	}
 
 	.card-row {
 		display: flex;
-		margin-bottom: 2rem;
-		padding-bottom: 3rem;
-		gap: 6rem;
+		margin-bottom: 2.5rem;
+		gap: 3rem;
 	}
 
 	.card {
 		flex: 1;
 		background-color: var(--dark-25);
 		border-radius: 5px;
-		padding: 0.5rem;
+		padding: 0.4rem;
+		width: 50%;
 
 		.card-title {
-			margin: 0.5cm 0rem 1.5rem 2rem;
+			margin: 0cm 0rem 1rem 2rem;
 			font-weight: 600;
-			font-size: 2.5rem;
+			font-size: 1.5rem;
 		}
 
 		.card-content {
@@ -607,24 +579,23 @@ nav {
 			.fecha {
 				width: 10%;
 				flex: 1;
-				font-size: 2rem;
-				padding-left: 2rem;
+				font-size: 1.3rem;
+				padding-left: 1rem;
 				text-align: center;
-				font-weight: 600;
+				font-weight: 400;
 			}
 
 			.parte-derecha {
 				flex: 4;
-				font-size: 1.5rem;
+				font-size: 1rem;
 				.time {
 					font-weight: 600;
-					padding-top: 0.2rem;
 					color: var(--dark-50);
 				}
 
 				.night {
-					padding-top: 0.6rem;
-					padding-bottom: 0.6rem;
+					padding-top: 0.3rem;
+					padding-bottom: 0.3rem;
 					font-weight: 600;
 				}
 
@@ -636,12 +607,9 @@ nav {
 			.compra {
 				background-color: var(--carmesi);
 				color: var(--light);
-				border-radius: 5px;
-				border: none;
-				margin: 3.5rem 2rem 2rem 1.5rem;
-				text-transform: uppercase;
+				margin: 1rem 1.5rem 1.5rem 1rem;
 				padding: 0.7rem;
-				font-size: 1.5rem;
+				font-size: 1rem;
 
 				&:hover {
 					cursor: pointer;
@@ -653,11 +621,11 @@ nav {
 	}
 
 	.card-left {
-		margin-left: 5rem;
+		margin-left: 15rem;
 	}
 
 	.card-right {
-		margin-right: 5rem;
+		margin-right: 15rem;
 	}
 
 	.tickets-section {
@@ -682,7 +650,7 @@ nav {
 				gap: 2rem;
 
 				.rectangle {
-					width: 80vw;
+					width: 67vw;
 					height: 12vh;
 					background-color: var(--carmesi);
 
@@ -707,8 +675,7 @@ nav {
 					}
 
 					.cuenta {
-						flex: 3;
-
+						flex: 2;
 						display: flex;
 						text-align: end;
 						justify-content: end;
@@ -754,26 +721,13 @@ nav {
 
 	.merchandising {
 		background-color: var(--dark);
-		.merch-title {
-			text-align: center;
-			align-items: center;
-			justify-content: center;
-			padding-top: 3rem;
-			font-size: 6rem;
-			text-transform: uppercase;
-			font-weight: 400;
-			font-family: bebas neue;
-		}
 
 		.merch-content {
-			height: 200vh;
+			height: 100vh;
 			.merch-row {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				gap: 10rem;
-
-				margin-bottom: 15rem;
 
 				.merch-derecha {
 					flex: 1;
@@ -781,12 +735,12 @@ nav {
 
 				.merch-izquierda {
 					flex: 1;
-					margin-left: 8rem;
+					margin-left: 12rem;
 				}
 
 				.merch {
 					width: 30vw;
-					height: 70vh;
+					height: 50vh;
 					/* background-color: var(--dark-25); */
 					border-radius: 5px;
 					flex: 1;
@@ -799,8 +753,8 @@ nav {
 						padding-top: 2rem;
 
 						img {
-							width: 524px;
-							height: 524px;
+							width: 262px;
+							height: 262px;
 							border: 5px solid var(--light);
 						}
 					}
@@ -812,14 +766,14 @@ nav {
 						text-align: center;
 
 						.merch-info-title {
-							font-size: 3rem;
+							font-size: 1.5rem;
 							font-weight: 400;
-							padding: 1rem 0rem;
+							padding: 0.4rem 0rem;
 						}
 
 						.merch-description {
-							font-size: 2.5rem;
-							padding-bottom: 1rem;
+							font-size: 1.3rem;
+							padding-bottom: 0.2rem;
 							justify-content: center;
 						}
 
@@ -830,14 +784,14 @@ nav {
 
 							.merch-price-number {
 								flex: 1;
-								text-align: start;
-								font-size: 1.5rem;
+								text-align: center;
+								font-size: 1.1rem;
 							}
 
 							.merch-button {
 								flex: 1;
 								display: flex;
-								justify-content: end;
+								justify-content: space-around;
 
 								button {
 									background-color: var(--carmesi);
@@ -845,9 +799,9 @@ nav {
 									border-radius: 5px;
 									border: none;
 									text-transform: uppercase;
-									padding: 0.7rem 1rem;
-									font-size: 1.5rem;
-									font-weight: 600;
+									padding: 0.4rem 0.7rem;
+									font-size: 1.1rem;
+									font-weight: 400;
 
 									&:hover {
 										cursor: pointer;
@@ -871,32 +825,22 @@ nav {
 	height: content;
 	display: flex;
 	flex-flow: column nowrap;
-	padding-bottom: 3rem;
-
-	.contact-title {
-		font-size: var(--h1-size);
-		font-family: bebas neue;
-		font-weight: 400;
-		text-align: center;
-		padding-top: 4rem;
-		padding-bottom: 1rem;
-		text-transform: uppercase;
-	}
+	padding-bottom: 2rem;
 
 	.contact-subtitle {
-		font-size: 3rem;
+		font-size: 1.5rem;
 		text-align: center;
-		padding-bottom: 3rem;
+		padding-bottom: 1rem;
 	}
 
 	.formulario {
 		align-self: center;
 		display: flex;
 		flex-flow: column nowrap;
-		width: 50vw;
+		width: 40vw;
 
 		label {
-			font-size: 1.5rem;
+			font-size: 1.1rem;
 			font-weight: 600;
 			padding: 1rem 0rem;
 
@@ -907,18 +851,18 @@ nav {
 
 		input[type="text"] {
 			border: 1px solid var(--carmesi);
-			height: 2.5rem;
+			height: 1.5rem;
 			font-family: Inter;
 			color: var(--dark);
-			font-size: 1.2rem;
+			font-size: 1rem;
 		}
 
 		textarea {
 			border: 1px solid var(--carmesi);
-			height: 10rem;
+			height: 6rem;
 			font-family: Inter;
 			color: var(--dark);
-			font-size: 1.2rem;
+			font-size: 1rem;
 		}
 
 		.enviar {
@@ -982,24 +926,26 @@ footer {
 	}
 
 	.logo-footer {
-		position: absolute;
-		color: var(--dark);
-		font-size: 6rem;
-		font-weight: 100;
-		top: 5%;
-		left: 5%;
+		.footer-name {
+			position: absolute;
+			color: var(--dark);
+			font-size: var(--name-size);
+			font-weight: 100;
+			top: 10%;
+			left: 10%;
+		}
 	}
 
 	.social-media-footer {
 		position: absolute;
-		top: 55%;
-		left: 10%;
+		top: 45%;
+		left: 12%;
 		.social {
 			display: flex;
 			gap: 0.7rem;
 			list-style-type: none;
 			li {
-				width: 3vw;
+				width: 2vw;
 			}
 		}
 	}
@@ -1070,7 +1016,7 @@ footer {
 			height: 40px;
 			width: 40px;
 			font-size: 0.6rem;
-			padding:0.3
+			padding: 0.3;
 		}
 	}
 
