@@ -1191,8 +1191,9 @@ footer {
 			.texto {
 				width: 50%;
 				p {
+					width: 60vw;
 					font-size: 0.6rem;
-					padding-left: 2rem;
+					padding-left: 2.7rem;
 					margin-top: -2rem;
 				}
 			}
