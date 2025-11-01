@@ -208,8 +208,7 @@ nav {
 	list-style-type: none;
 
 	li {
-		/* flex: 0 0 30px; */
-		width: 1.5vw;
+		flex: 0 0 30px;
 		margin-right: 1rem;
 	}
 }
@@ -398,12 +397,12 @@ nav {
 				.songs {
 					width: 50vw;
 					height: auto;
-					display:flex;
-					flex-flow: row wrap; 
-					gap:2rem;
+					display: flex;
+					flex-flow: row wrap;
+					gap: 2rem;
 					.song {
 						width: 45%;
-					} 
+					}
 				}
 			}
 		}
@@ -539,7 +538,7 @@ nav {
 			text-transform: uppercase;
 			width: 30%;
 			text-align: center;
-			left: 1.5%;
+			left: -0.5%;
 		}
 	}
 }
@@ -939,13 +938,13 @@ footer {
 	.social-media-footer {
 		position: absolute;
 		top: 45%;
-		left: 12%;
+		left: 13%;
 		.social {
 			display: flex;
 			gap: 0.7rem;
 			list-style-type: none;
 			li {
-				width: 2vw;
+				width: 30px;
 			}
 		}
 	}
@@ -971,6 +970,42 @@ footer {
 
 		ul {
 			padding-left: 1rem;
+		}
+	}
+
+	.btn {
+		right: 8vw;
+	}
+
+	.hero-content {
+		padding-right: 25rem;
+		background-image: url("assets/img/rubio-entero_-fondo-negro.png");
+		background-size: contain;
+		background-position: bottom center;
+
+		.name-song {
+			.name {
+				font-size: 2.5rem;
+			}
+
+			p {
+				width: 10px;
+				font-size: 0.5rem;
+				width: 100%;
+			}
+		}
+
+		.btns {
+			a {
+				.btn {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 40px;
+					width: 40px;
+					font-size: 0.5rem;
+				}
+			}
 		}
 	}
 }
