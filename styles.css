@@ -1067,10 +1067,11 @@ footer {
 	.hero-content {
 		margin:0;
 		padding: 0;
-		background-position: end center;
+		background-position: center top;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		justify-content: end;
+		align-items: center ;
+		padding-bottom: 2rem;
 
 		.name {
 			h1 {
