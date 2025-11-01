@@ -1207,6 +1207,7 @@ footer {
 
 			.albums-content {
 				.albums-content-1 {
+					
 					.cover {
 						img {
 							width: 500px;
@@ -1216,6 +1217,7 @@ footer {
 				}
 
 				.albums-content-container {
+					width: 500px;
 					display:flex;
 					flex-flow: column nowrap;
 					align-items: center;
