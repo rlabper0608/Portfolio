@@ -981,7 +981,7 @@ footer {
 		padding-right: 25rem;
 		background-image: url("assets/img/rubio-entero_-fondo-negro.png");
 		background-size: contain;
-		background-position: bottom center;
+		background-position: center center;
 
 		.name-song {
 			.name {
@@ -1011,6 +1011,9 @@ footer {
 }
 
 @media screen and (max-width: 880px) {
+	header {
+		height: 50px;
+	}
 	nav {
 		border: 1px solid green;
 		flex: 3;
@@ -1051,6 +1054,31 @@ footer {
 					width: 20px;
 					height: 20px;
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.hero {
+		padding:0;
+		margin:0;
+	}
+	.hero-content {
+		margin:0;
+		padding: 0;
+		background-position: end center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.name {
+			h1 {
+				font-size: 1.5rem;
+			}
+
+			p {
+				font-size: 0.3rem;
 			}
 		}
 	}
