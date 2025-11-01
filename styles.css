@@ -1071,9 +1071,28 @@ footer {
 		display: flex;
 		justify-content: end;
 		align-items: center ;
-		padding-bottom: 2rem;
+		position: relative;
+		margin-bottom: -12rem;
+
+		.name-song {
+			position: absolute ;
+			left: 8%;
+			top:10%;
+		}
+		.btns {
+			position: absolute ;
+			left: 8%;
+			top:35%;
+		}
+
+		.social-media  {
+			position: absolute ;
+			left: 8%;
+			top:45%;
+		}
 
 		.name {
+			
 			h1 {
 				font-size: 1.5rem;
 			}
