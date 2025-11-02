@@ -352,19 +352,66 @@ nav {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		.cover-1 {
+			background-image: url("assets/img/38-grados.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+
+			width: 552px;
+			height: 552px;
+
+			margin-left: 8rem;
+			flex: 0.5;
+			border: 3px solid var(--light);
+		}
 	}
 
 	.albums-content-container {
 		flex: 1;
 	}
 
-	.cover {
+	.cover-2 {
+		background-image: url("assets/img/LNDP-coverjpg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		width: 552px;
+		height: 552px;
+
 		margin-left: 8rem;
 		flex: 0.5;
+		border: 3px solid var(--light);
+	}
 
-		img {
-			border: 3px solid var(--light);
-		}
+	.cover-3 {
+		background-image: url("assets/img/luna 18 cover.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		width: 552px;
+		height: 552px;
+
+		margin-left: 8rem;
+		flex: 0.5;
+		border: 3px solid var(--light);
+	}
+
+	.cover-4 {
+		background-image: url("assets/img/luna 18 deluxe cover.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		width: 552px;
+		height: 552px;
+
+		margin-left: 8rem;
+		flex: 0.5;
+		border: 3px solid var(--light);
 	}
 
 	.music {
@@ -545,74 +592,74 @@ nav {
 		display: flex;
 		margin-bottom: 2.5rem;
 		gap: 3rem;
-	}
 
-	.card {
-		flex: 1;
-		background-color: var(--dark-25);
-		border-radius: 5px;
-		padding: 0.4rem;
-		width: 50%;
+		.card {
+			flex: 1;
+			background-color: var(--dark-25);
+			border-radius: 5px;
+			padding: 0.4rem;
+			width: 50%;
 
-		.card-title {
-			margin: 0cm 0rem 1rem 2rem;
-			font-weight: 600;
-			font-size: 1.5rem;
-		}
-
-		.card-content {
-			display: flex;
-
-			.fecha {
-				width: 10%;
-				flex: 1;
-				font-size: 1.3rem;
-				padding-left: 1rem;
-				text-align: center;
-				font-weight: 400;
+			.card-title {
+				margin: 0cm 0rem 1rem 2rem;
+				font-weight: 600;
+				font-size: 1.5rem;
 			}
 
-			.parte-derecha {
-				flex: 4;
-				font-size: 1rem;
-				.time {
-					font-weight: 600;
-					color: var(--dark-50);
-				}
+			.card-content {
+				display: flex;
 
-				.night {
-					padding-top: 0.3rem;
-					padding-bottom: 0.3rem;
-					font-weight: 600;
-				}
-
-				.place {
+				.fecha {
+					width: 10%;
+					flex: 1;
+					font-size: 1.3rem;
+					padding-left: 1rem;
+					text-align: center;
 					font-weight: 400;
 				}
-			}
 
-			.compra {
-				background-color: var(--carmesi);
-				color: var(--light);
-				margin: 1rem 1.5rem 1.5rem 1rem;
-				padding: 0.7rem;
-				font-size: 1rem;
+				.parte-derecha {
+					flex: 4;
+					font-size: 1rem;
+					.time {
+						font-weight: 600;
+						color: var(--dark-50);
+					}
 
-				&:hover {
-					cursor: pointer;
-					background-color: var(--light);
-					color: var(--dark);
+					.night {
+						padding-top: 0.3rem;
+						padding-bottom: 0.3rem;
+						font-weight: 600;
+					}
+
+					.place {
+						font-weight: 400;
+					}
+				}
+
+				.compra {
+					background-color: var(--carmesi);
+					color: var(--light);
+					margin: 1rem 1.5rem 1.5rem 1rem;
+					padding: 0.7rem;
+					font-size: 1rem;
+
+					&:hover {
+						cursor: pointer;
+						background-color: var(--light);
+						color: var(--dark);
+					}
 				}
 			}
 		}
-	}
 
-	.card-left {
-		margin-left: 15rem;
-	}
+		.card-left {
+			margin-left: 15rem;
+		}
 
-	.card-right {
-		margin-right: 15rem;
+		.card-right {
+			margin-right: 15rem;
+		}
 	}
 
 	.tickets-section {
@@ -1003,7 +1050,6 @@ footer {
 		height: 50px;
 	}
 	nav {
-		border: 1px solid green;
 		flex: 3;
 
 		ul {
@@ -1100,7 +1146,7 @@ footer {
 
 	.biography-header {
 		h1 {
-			font-size: 2rem;
+			font-size: 3rem;
 		}
 	}
 
@@ -1137,7 +1183,7 @@ footer {
 		.division {
 			.image {
 				width: 500px;
-				height: 320px;
+				height: 340px;
 				margin: 0;
 				background-size: contain;
 			}
@@ -1145,7 +1191,7 @@ footer {
 
 		.biography-content-3 {
 			width: 100%;
-			height:60vh;
+			height: 60vh;
 			h3 {
 				font-size: 1rem;
 				text-align: center;
@@ -1159,11 +1205,10 @@ footer {
 				}
 
 				.texto {
-					
 					p {
 						font-size: 0.7rem;
-						bottom:1%;
-						top:55%;
+						bottom: 1%;
+						top: 55%;
 						&:nth-child(1) {
 							left: 0;
 							width: 100%;
@@ -1171,7 +1216,6 @@ footer {
 						}
 
 						&:nth-child(2) {
-							
 							right: 0;
 							width: 100%;
 							padding: 8rem 2rem 2rem 2rem;
@@ -1191,9 +1235,9 @@ footer {
 			.texto {
 				width: 50%;
 				p {
-					width: 60vw;
+					width: 55vw;
 					font-size: 0.6rem;
-					padding-left: 2.7rem;
+					padding-left: 2rem;
 					margin-top: -2rem;
 				}
 			}
@@ -1203,70 +1247,431 @@ footer {
 	.albums {
 		.albums-header {
 			h1 {
-				font-size: 2rem;
+				font-size: 3rem;
 			}
+		}
 
-			.albums-content {
-				.albums-content-1 {
-					
-					.cover {
-						img {
-							width: 500px;
-							height: auto;
-						}
-					}
+		.albums-content {
+			.albums-content-1 {
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+
+				.cover-1 {
+					width: 200px;
+					height: 200px;
+					padding-top: 10rem;
+					margin-left: 0rem;
 				}
 
 				.albums-content-container {
-					width: 500px;
-					display:flex;
-					flex-flow: column nowrap;
-					align-items: center;
+					display: flex;
+					flex-flow: column;
 					justify-content: center;
-
+					align-items: center;
 					.title {
-						font-size: 1.5rem;
-						padding-left: 3rem;
+						padding-top: 2rem;
+						padding-left: 0;
+						font-size: 2.3rem;
+						justify-content: center;
+						align-items: center;
 					}
 					.description {
-						font-size: 0.5rem;
-						padding-left: 3rem;
+						padding-top: 1rem;
+						justify-content: center;
+						width: 100%;
+						font-size: 0.7rem;
 					}
 
 					.music {
+						display: flex;
+						width: 80%;
+						padding: 0;
 						.music-album {
-							width: 50vw;
-							height: auto;
+							justify-content: center;
+							align-items: center;
+							width: 80%;
+							height: 44%;
+						}
+					}
+				}
+			}
+
+			.albums-content-repeat {
+				margin-top: 2rem;
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+
+				.cover-2,
+				.cover-3,
+				.cover-4 {
+					width: 200px;
+					height: 200px;
+					padding-top: 10rem;
+					margin-left: 0rem;
+				}
+
+				.albums-content-container {
+					display: flex;
+					flex-flow: column;
+					justify-content: center;
+					align-items: center;
+					.title {
+						padding-top: 2rem;
+						padding-left: 0;
+						font-size: 2.3rem;
+						justify-content: center;
+						align-items: center;
+					}
+					.description {
+						padding-top: 1rem;
+						justify-content: center;
+						width: 100%;
+						font-size: 0.7rem;
+					}
+
+					.music {
+						display: flex;
+						width: 80%;
+						padding: 0;
+						.music-album {
+							justify-content: center;
+							align-items: center;
+							width: 80%;
+							height: 44%;
+						}
+
+						.music-albums {
 							display: flex;
-							flex-flow: row wrap;
-							gap: 2rem;
+							width: 100%;
+							padding: 0;
+							justify-content: center;
 
 							.songs {
-								width: 50vw;
-								height: auto;
-								display: flex;
-								flex-flow: row wrap;
-								gap: 2rem;
-								.song {
-									width: 45%;
+								justify-content: center;
+								align-items: center;
+								width: 80%;
+								height: 44%;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.last-track {
+			.title {
+				font-size: 2rem;
+				padding: 0 0 1rem 5rem;
+			}
+
+			.video-walls {
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+				margin: 0;
+
+				.video-last-track {
+					flex: 1;
+					max-width: 300px;
+				}
+
+				.parte-derecha {
+					.song-title {
+						padding-top: 1rem;
+						font-size: 1.5rem;
+						padding-left: 0rem;
+					}
+
+					.listen,
+					.show {
+						p {
+							font-size: 1.2rem;
+						}
+
+						.media {
+							.logo {
+								width: 50px;
+								padding-top: 3rem;
+							}
+
+							.name {
+								font-size: 1rem;
+								padding-top: 3.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.on-tour {
+		.on-tour-header {
+			h1 {
+				font-size: 3rem;
+			}
+		}
+
+		.carteles {
+			.izq,
+			.der {
+				img {
+					width: 100px;
+				}
+			}
+
+			.izq {
+				justify-content: center;
+			}
+
+			.der {
+				.texto {
+					border: 1px solid blue;
+					width: 100%;
+					left: -6%;
+					font-size: 1rem;
+					text-align: center;
+				}
+			}
+
+			.centro {
+				img {
+					width: 250px;
+				}
+				margin-left: 0;
+				margin-right: 0.5rem;
+			}
+		}
+
+		.shows {
+			.title {
+				font-size: 2rem;
+				padding-left: 2rem;
+			}
+
+			.card-row {
+				display: inline;
+				margin: 0;
+				gap: 1rem;
+
+				.card {
+					margin: 2rem;
+					margin-left: 3rem;
+					width: 80%;
+					.card-title {
+						font-size: 1.2rem;
+					}
+
+					.card-content {
+						.fecha {
+							font-size: 1rem;
+						}
+
+						.parte-derecha {
+							font-size: 0.8rem;
+							padding-left: 1rem;
+						}
+
+						.compra {
+							font-size: 0.8rem;
+							margin-right: 0.7rem;
+							margin-left: 0.5rem;
+						}
+					}
+				}
+			}
+
+			.tickets-section {
+				.fecha-concierto {
+					font-size: 1.5rem;
+				}
+
+				.tickets-content {
+					.rectangle {
+						width: 80vw;
+						.izquierda {
+							margin-top:0.5rem;
+							font-size: 1.1rem;
+							margin-left: 1rem;
+						}
+
+						.cuenta {
+							flex: 1;
+							font-size: 1rem;
+						}
+
+						.btns {
+							padding-right: 1rem;
+							padding-bottom: 2rem;
+							margin-left: -3rem;
+							button {
+								width: 25px;
+								height: 25px;
+								font-size: 0.8rem;
+							}
+						}
+					}
+				}
+			}
+
+			.merchandising {
+				.merch-title {
+					h1 {
+						font-size:3rem;
+					}
+				}
+
+				.merch-content {
+					.merch-izquierda {
+						margin-left: 2rem;
+					}
+
+					.merch {
+						width: 40vw;
+						padding-top:0rem;
+						.merch-img {
+							img {
+								width: 200px;
+								height: 200px;
+							}
+						}
+
+						.merch-info {
+							.merch-info-title {
+								font-size: 1.2rem;;
+							}
+
+							.merch-description {
+								font-size: 1.1rem;
+							}
+
+							.merch-price {
+								padding-top:0.4rem;
+								.merch-price-number {
+									font-size: 1rem;
+								}
+
+								.merch-button {
+									button {
+										font-size: 0.8rem;
+									}
 								}
 							}
 						}
 					}
 				}
-
-				.albums-content-repeat {
-					margin:0 0 0;
-					.cover {
-						img {
-							width: 300px;
-							height: 300px;
-						}
-					}
-
-					
-				}
 			}
 		}
 	}
+
+	.contact {
+		.contact-title {
+			h1 {
+				font-size: 3rem;
+			} 
+		}
+
+		.contact-subtitle {
+			padding-top:0;
+		}
+	}
 }
+
+/* 
+.contact {
+	background-color: var(--dark-75);
+	height: content;
+	display: flex;
+	flex-flow: column nowrap;
+	padding-bottom: 2rem;
+
+	.contact-subtitle {
+		font-size: 1.5rem;
+		text-align: center;
+		padding-bottom: 1rem;
+	}
+
+	.formulario {
+		align-self: center;
+		display: flex;
+		flex-flow: column nowrap;
+		width: 40vw;
+
+		label {
+			font-size: 1.1rem;
+			font-weight: 600;
+			padding: 1rem 0rem;
+
+			.asterisco {
+				color: var(--carmesi);
+			}
+		}
+
+		input[type="text"] {
+			border: 1px solid var(--carmesi);
+			height: 1.5rem;
+			font-family: Inter;
+			color: var(--dark);
+			font-size: 1rem;
+		}
+
+		textarea {
+			border: 1px solid var(--carmesi);
+			height: 6rem;
+			font-family: Inter;
+			color: var(--dark);
+			font-size: 1rem;
+		}
+
+		.enviar {
+			padding-top: 2rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.policy {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.privacy {
+					font-size: 1rem;
+				}
+			}
+
+			input[type="checkbox"] {
+				margin-right: 0.5rem;
+				width: 1.2rem;
+				height: 1.2rem;
+			}
+
+			.boton {
+				flex: 1;
+				display: flex;
+				justify-content: end;
+
+				button {
+					background-color: var(--carmesi);
+					color: var(--light);
+					border-radius: 5px;
+					border: none;
+					text-transform: uppercase;
+					padding: 0.7rem 1rem;
+					font-size: 1.2rem;
+					font-weight: 600;
+					margin-right: 1rem;
+
+					&:hover {
+						cursor: pointer;
+						background-color: var(--light);
+						color: var(--dark);
+					}
+				}
+			}
+		}
+ */
