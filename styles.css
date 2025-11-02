@@ -1495,7 +1495,7 @@ footer {
 					.rectangle {
 						width: 80vw;
 						.izquierda {
-							margin-top:0.5rem;
+							margin-top: 0.5rem;
 							font-size: 1.1rem;
 							margin-left: 1rem;
 						}
@@ -1522,7 +1522,7 @@ footer {
 			.merchandising {
 				.merch-title {
 					h1 {
-						font-size:3rem;
+						font-size: 3rem;
 					}
 				}
 
@@ -1533,7 +1533,7 @@ footer {
 
 					.merch {
 						width: 40vw;
-						padding-top:0rem;
+						padding-top: 0rem;
 						.merch-img {
 							img {
 								width: 200px;
@@ -1543,7 +1543,7 @@ footer {
 
 						.merch-info {
 							.merch-info-title {
-								font-size: 1.2rem;;
+								font-size: 1.2rem;
 							}
 
 							.merch-description {
@@ -1551,7 +1551,7 @@ footer {
 							}
 
 							.merch-price {
-								padding-top:0.4rem;
+								padding-top: 0.4rem;
 								.merch-price-number {
 									font-size: 1rem;
 								}
@@ -1573,11 +1573,36 @@ footer {
 		.contact-title {
 			h1 {
 				font-size: 3rem;
-			} 
+			}
 		}
 
 		.contact-subtitle {
-			padding-top:0;
+			padding-top: 0;
+		}
+
+		.formulario {
+			width: 60vw;
+			.enviar {
+				padding-top:1rem;
+				.policy {
+					.privacy {
+						font-size: 0.6rem;
+					}
+				}
+
+				.boton {
+					button {
+						font-size: 0.8rem;
+						margin:0;
+					}
+				}
+			}
+		}
+	}
+
+	.footer {
+		.fondo {
+			background-size: contain;
 		}
 	}
 }
