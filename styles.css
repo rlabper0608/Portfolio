@@ -21,8 +21,8 @@
 	--dark-25: #999999;
 	--carmesi: #c62828;
 
-	--h1-size: 5rem;
-	--name-size: 8rem;
+	--h1-size: clamp(2.5rem, 1.62rem + 2.817vw, 5rem);
+	--name-size: clamp(6rem, 5.296rem + 2.254vw, 8rem);
 }
 
 html,
@@ -70,7 +70,7 @@ h1 {
 }
 
 h3 {
-	font-size: 2.5rem;
+	font-size: clamp(1.25rem, 0.81rem + 1.408vw, 2.5rem);
 	font-family: inter;
 	font-weight: 600;
 	padding-left: 3rem;
@@ -225,19 +225,26 @@ nav {
 		flex-flow: column nowrap;
 		align-items: center;
 		justify-content: center;
-	}
 
-	.biography-content-1 {
-		position: relative;
+		.biography-content-1 {
+			position: relative;
 
-		.texto {
-			font-size: 1.2rem;
-			text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-			columns: 2;
-			column-gap: 25rem;
-			padding: 6rem;
-			position: absolute;
-			top: 20%;
+			.img_bio {
+				display: block;
+				width: 100%;
+				height: auto;
+				object-fit: contain;
+			}
+
+			.texto {
+				font-size: 1.2rem;
+				text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+				columns: 2;
+				column-gap: 25rem;
+				padding: 6rem;
+				position: absolute;
+				top: 20%;
+			}
 		}
 	}
 
@@ -245,7 +252,7 @@ nav {
 
 	.biography-content-2 {
 		position: relative;
-		height: 100vh;
+		margin-bottom: 4rem;
 		margin-bottom: 4rem;
 
 		h3 {
@@ -254,19 +261,18 @@ nav {
 			text-align: end;
 		}
 
-		.texto {
-			position: absolute;
-			width: 30%;
-			top: 50%;
-			left: 70%;
-			transform: translate(-40%, -30%);
+		.biography-content-2-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.texto {
+				position: absolute;
+				width: 30%;
+				top: 50%;
+				left: 70%;
+				transform: translate(-40%, -30%);
+			}
 		}
-	}
-
-	.biography-content-2-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 
 	/* Division */
@@ -430,7 +436,7 @@ nav {
 		.music {
 			.music-album {
 				.songs {
-					width: 50vw;
+					width: 30vw;
 					height: auto;
 					display: flex;
 					flex-flow: row wrap;
@@ -1019,13 +1025,9 @@ footer {
 		background-position: center center;
 
 		.name-song {
-			.name {
-				font-size: 2.5rem;
-			}
-
 			p {
 				width: 10px;
-				font-size: 0.5rem;
+				font-size: 0.8rem;
 				width: 100%;
 			}
 		}
@@ -1043,6 +1045,225 @@ footer {
 			}
 		}
 	}
+
+	.biography {
+		.biography-content {
+			img {
+				max-width: 100%;
+			}
+			.biography-content-1 {
+				.texto {
+					padding: 3rem;
+					height: 550px;
+					column-gap: 20rem;
+
+					p {
+						font-size: 1rem;
+						width: 100%;
+					}
+				}
+			}
+
+			.biography-content-2 {
+				.texto {
+					font-size: 1rem;
+					top: 45%;
+				}
+			}
+
+			.biography-content-3 {
+				.biography-content-3-container {
+					.img-bio3 {
+						img {
+							width: 500px;
+						}
+					}
+
+					.texto {
+						p {
+							padding: 1rem;
+							font-size: 1rem;
+						}
+					}
+				}
+			}
+
+			.biography-content-4 {
+				.texto {
+					top: 40%;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+
+	.albums {
+		.albums-content {
+			.albums-content-1 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.cover-1 {
+					flex: 1;
+					width: 500px;
+					height: 500px;
+					margin-left: 1rem;
+				}
+
+				.albums-content-container {
+					flex: 2;
+					align-self: center;
+					.title {
+						font-size: 2.3rem;
+					}
+
+					.description {
+						width: 100%;
+					}
+				}
+			}
+
+			.albums-content-repeat {
+				display: flex;
+
+				.cover-2,
+				.cover-3,
+				.cover-4 {
+					flex: 1;
+					width: 500px;
+					height: 500px;
+					margin-left: 1rem;
+				}
+
+				.albums-content-container {
+					flex: 2;
+					align-self: center;
+					.title {
+						font-size: 2.3rem;
+					}
+
+					.description {
+						width: 100%;
+					}
+
+					.music {
+						.music-albums {
+							.songs {
+								.song {
+									justify-content: center;
+									align-items: center;
+									width: 80%;
+									height: 44%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.last-track {
+			.title {
+				font-size: 3rem;
+			}
+
+			.video-walls {
+				.parte-derecha {
+					.song-title {
+						font-size: 2rem;
+					}
+
+					.listen,
+					.show {
+						p {
+							font-size: 1.7rem;
+						}
+
+						.media {
+							.logo {
+								width: 70px;
+							}
+
+							.name {
+								font-size: 1.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.on-tour {
+		.carteles {
+			.izq,
+			.der {
+				justify-content: center;
+			}
+
+			.der {
+				.texto {
+					left: 32%;
+				}
+			}
+
+			.centro {
+				justify-content: center;
+				margin-left: -5rem;
+			}
+		}
+
+		.shows {
+			.card-row {
+				width: 100%;
+
+				.card {
+					margin: 2rem;
+
+					.card-content {
+						.fecha {
+							display: flex;
+							align-items: center;
+						}
+
+						.parte-derecha {
+							padding: 1rem;
+						}
+					}
+				}
+			}
+
+			.tickets-section {
+				.tickets-content {
+					.rectangle {
+						.izquierda {
+							margin-left: 1rem;
+						}
+
+						.cuenta {
+							flex: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contact {
+		.formulario {
+			width: 60vw;
+		}
+	}
+
+	footer {
+		.fondo {
+			height: 50vh;
+		}
+
+		.social-media-footer {
+			top: 50%;
+		}
+	}
 }
 
 @media screen and (max-width: 880px) {
@@ -1050,6 +1271,7 @@ footer {
 		height: 50px;
 	}
 	nav {
+		border: 1px solid blue;
 		flex: 3;
 
 		ul {
@@ -1072,23 +1294,278 @@ footer {
 		justify-content: center;
 		align-items: center;
 
-		.name {
-			h1 {
-				font-size: 2.5rem;
-			}
+		.name-song {
+			margin-left: -7rem;
+			.name {
+				margin-top: 10rem;
 
-			p {
-				font-size: 0.5rem;
+				p {
+					font-size: 0.5rem;
+				}
 			}
 		}
 
+		.btns {
+			margin-left: -7rem;
+		}
+
 		.social-media {
+			margin-left: -7rem;
 			li {
 				a {
 					width: 20px;
 					height: 20px;
 				}
 			}
+		}
+	}
+
+	.biography {
+		.biography-content {
+			.biography-content-1 {
+				.texto {
+					padding: 1rem;
+					height: 380px;
+					column-gap: 14rem;
+
+					p {
+						font-size: 0.9rem;
+					}
+				}
+			}
+
+			.biography-content-2 {
+				.texto {
+					font-size: 0.7rem;
+					top: 45%;
+				}
+			}
+
+			.biography-content-3 {
+				.biography-content-3-container {
+					.img-bio3 {
+						img {
+							width: 300px;
+						}
+					}
+
+					.texto {
+						p {
+							padding: 0rem;
+							font-size: 0.8rem;
+						}
+
+						p:first-child {
+							left: -25%;
+						}
+						p:last-child {
+							width: 40%;
+							right: -20%;
+						}
+					}
+				}
+			}
+
+			.biography-content-4 {
+				.texto {
+					top: 45%;
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+	.albums {
+		.albums-content {
+			.albums-content-1 {
+				.cover-1 {
+					width: 300px;
+					height: 300px;
+				}
+
+				.albums-content-container {
+					.title {
+						font-size: 1.8rem;
+					}
+
+					.description {
+						width: 100%;
+						font-size: 1rem;
+					}
+				}
+			}
+
+			.albums-content-repeat {
+				display: flex;
+
+				.cover-2,
+				.cover-3,
+				.cover-4 {
+					width: 300px;
+					height: 300px;
+				}
+
+				.albums-content-container {
+					.title {
+						font-size: 1.8rem;
+					}
+
+					.description {
+						font-size: 1rem;
+						width: 100%;
+					}
+
+					.music {
+						.music-albums {
+							.songs {
+								.song {
+									justify-content: center;
+									align-items: center;
+									width: 80%;
+									height: 44%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.last-track {
+			.title {
+				font-size: 2rem;
+			}
+
+			.video-walls {
+				.video-last-track {
+					max-width: 300px;
+					margin-left: -5rem;
+				}
+
+				.parte-derecha {
+					.song-title {
+						font-size: 1.5rem;
+						padding-left: 0.5rem;
+					}
+
+					.listen,
+					.show {
+						p {
+							font-size: 1.2rem;
+						}
+
+						.media {
+							.logo {
+								padding-top: 3rem;
+								width: 50px;
+							}
+
+							.name {
+								padding-top: 3.5rem;
+								font-size: 1rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.on-tour {
+		.carteles {
+			.izq,
+			.der {
+				img {
+					width: 150px;
+				}
+			}
+
+			.der {
+				padding-left: 3rem;
+				.texto {
+					font-size: 1.5rem;
+					left: 40%;
+				}
+			}
+
+			.centro {
+				justify-content: center;
+				margin-left: -4rem;
+
+				img {
+					width: 300px;
+				}
+			}
+		}
+
+		.shows {
+			.card-row {
+				width: 100%;
+
+				.card {
+					margin: 0.5rem;
+
+					.card-content {
+						.fecha {
+							font-size: 1rem;
+						}
+
+						.parte-derecha {
+							padding-left: 2rem;
+							font-size: 0.7rem;
+						}
+
+						.compra {
+							margin: auto 0;
+							padding: 0.6rem;
+							font-size: 0.7rem;
+						}
+					}
+				}
+			}
+
+			.tickets-section {
+				.tickets-content {
+					.rectangle {
+						.izquierda {
+							margin-left: 1rem;
+							font-size: 1.2rem;
+						}
+
+						.cuenta {
+							flex: 1;
+							font-size: 1rem;
+							justify-content: center;
+						}
+
+						.btns {
+							margin-right: -2rem;
+						}
+					}
+				}
+			}
+		}
+
+		.merchandising {
+			.merch-content {
+				margin-left: -6rem;
+			}
+		}
+	}
+
+	footer {
+		.fondo {
+			height: 40vh;
+		}
+
+		.logo-footer {
+			.footer-name {
+				left: 5%;
+			}
+		}
+
+		.social-media-footer {
+			top: 55%;
+			left: 9%;
 		}
 	}
 }
@@ -1583,7 +2060,7 @@ footer {
 		.formulario {
 			width: 60vw;
 			.enviar {
-				padding-top:1rem;
+				padding-top: 1rem;
 				.policy {
 					.privacy {
 						font-size: 0.6rem;
@@ -1593,7 +2070,7 @@ footer {
 				.boton {
 					button {
 						font-size: 0.8rem;
-						margin:0;
+						margin: 0;
 					}
 				}
 			}
@@ -1609,14 +2086,14 @@ footer {
 		.logo-footer {
 			.footer-name {
 				font-size: 4rem;
-				left:2%;
-				top:12%;
+				left: 2%;
+				top: 12%;
 			}
 		}
 
 		.social-media-footer {
-			top:6%;
-			left:90%;
+			top: 6%;
+			left: 90%;
 			.social {
 				flex-flow: column;
 				li {
@@ -1626,22 +2103,7 @@ footer {
 		}
 
 		.copyright {
-			font-size:0.5rem;
+			font-size: 0.5rem;
 		}
 	}
 }
-
-/* 
-footer {
-
-
-	.copyright {
-		display: flex;
-		padding: 0.5rem 1rem;
-		font-size: 1rem;
-		width: 100%;
-		bottom: 0%;
-		background-color: var(--dark-75);
-		justify-content: space-between;
-	}
- */
