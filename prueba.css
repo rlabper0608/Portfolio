@@ -851,12 +851,13 @@ footer {
 				gap: 0.7rem;
 				list-style-type: none;
 				li {
-					flex: 0 0 30px
+					flex: 0 0 30px;
 				}
 			}
 		}
 
 		.copyright {
+			position: fixed;
 			display: flex;
 			padding: 0.5rem 1rem;
 			font-size: 1rem;
@@ -1021,10 +1022,10 @@ footer {
 								.merch-price-number {
 									font-size: 2rem;
 								}
-								
+
 								.merch-button {
 									button {
-										font-size:1.5rem;
+										font-size: 1.5rem;
 									}
 								}
 							}
@@ -1038,17 +1039,265 @@ footer {
 	footer {
 		.footer-content {
 			.social-media-footer {
-				padding-left:5.5rem;
+				padding-left: 5.5rem;
 			}
 		}
 	}
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
 	.hero {
 		.hero-content {
+			position: relative;
 			border: 1px solid purple;
 			padding-left: 1rem;
+
+			.name-song {
+				position: absolute;
+
+				.name {
+					position: absolute;
+					top:-1380%;
+					left: 90%;
+					font-size:8rem;
+				}
+
+				p {
+					opacity: 0;
+				}
+				
+			}
+
+			.btns {
+				position: absolute;
+				top: 44%;
+			}
+
+			.social-media {
+				position: absolute;
+				flex-flow: column nowrap;
+				justify-content: center;
+				gap: 1rem;
+				width: 50px;
+				left: 87%;
+				top: 25%;
+			}
+		}
+	}
+
+	.biography {
+		.biography-content {
+			.biography-content-1 {
+				.inside-content {
+					.texto {
+						gap: 14rem;
+						padding: 2rem 1rem;
+					}
+				}
+			}
+
+			.biography-content-3 {
+				.biography-content-3-container {
+					.texto {
+						.img-bio3 {
+							img {
+								width: 200px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.albums {
+		.albums-content {
+			.albums-content-repeat {
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+				margin-left: 0rem;
+
+				.cover-1,
+				.cover-2,
+				.cover-3,
+				.cover-4 {
+					width: 50%;
+					margin-bottom: 2rem;
+					align-self: center;
+				}
+
+				.title {
+					text-align: center;
+					padding: 0;
+					font-size: 2.5rem;
+				}
+
+				.description {
+					width: 100%;
+					font-size: 1.5rem;
+				}
+
+				.music {
+					.music-album {
+						width: 70%;
+						margin-left: 2rem;
+					}
+				}
+			}
+		}
+
+		.last-track {
+			.albums-last-track-container {
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+
+				.video-walls {
+					flex-flow: column;
+					justify-content: center;
+					align-items: center;
+
+					.video-last-track {
+						align-self: center;
+						max-width: 300px;
+					}
+				}
+
+				.parte-derecha {
+					padding-left: 0rem;
+
+					.listen,
+					.show {
+						p {
+							font-weight: 400;
+						}
+
+						.media {
+							.logo {
+								width: 40px;
+								padding-top: 4rem;
+							}
+
+							.name {
+								padding: 4.5rem 4rem 0rem 2rem;
+								font-size: 1.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.on-tour {
+		.shows {
+			.card-row {
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+				gap: 1.5rem;
+				margin-bottom: 1.5rem;
+
+				.card {
+					width: 70%;
+
+					.card-title {
+						font-size: 2rem;
+					}
+
+					.card-content {
+						.fecha {
+							font-size: 1.2rem;
+						}
+
+						.parte-derecha {
+							font-size: 1rem;
+						}
+					}
+				}
+
+				.card-left {
+					margin-left: 0;
+				}
+				.card-right {
+					margin-right: 0;
+				}
+			}
+
+			.tickets-section {
+				.tickets {
+					.tickets-content {
+						.rectangle {
+							.izquierda {
+								margin-left: 1rem;
+								margin-top: 2rem;
+							}
+
+							.btns {
+								button {
+									width: 2vh;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.merchandising {
+				.merch-content {
+					.merch {
+						.merch-info {
+							.merch-info-title {
+								font-size: 2rem;
+							}
+
+							.merch-description {
+								font-size: 1.5rem;
+							}
+
+							.merch-price {
+								.merch-price-number {
+									font-size: 1.5rem;
+								}
+
+								.merch-button {
+									button {
+										font-size: 1rem;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		.footer-content {
+			display: flex;
+
+			.logo-footer {
+				flex: 1;
+				border: 1px solid green;
+				padding: 4rem 0rem 4rem 2rem;
+			}
+
+			.social-media-footer {
+				border: 1px solid red;
+				padding: 4rem 2rem;
+				.social {
+					display: flex;
+					flex-flow: column nowrap;
+					justify-content: center;
+					li {
+						width: 25px;
+					}
+				}
+			}
 		}
 	}
 }
