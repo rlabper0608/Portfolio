@@ -1057,15 +1057,14 @@ footer {
 
 				.name {
 					position: absolute;
-					top:-1380%;
+					top: -1380%;
 					left: 90%;
-					font-size:8rem;
+					font-size: 8rem;
 				}
 
 				p {
 					opacity: 0;
 				}
-				
 			}
 
 			.btns {
@@ -1251,16 +1250,16 @@ footer {
 					.merch {
 						.merch-info {
 							.merch-info-title {
-								font-size: 2rem;
+								font-size: clamp(1.5rem, 1.143rem + 0.952vw, 2rem);
 							}
 
 							.merch-description {
-								font-size: 1.5rem;
+								font-size: clamp(1.3rem, 1.157rem + 0.381vw, 1.5rem);
 							}
 
 							.merch-price {
 								.merch-price-number {
-									font-size: 1.5rem;
+									font-size: clamp(1.3rem, 1.157rem + 0.381vw, 1.5rem);
 								}
 
 								.merch-button {
@@ -1295,6 +1294,59 @@ footer {
 					justify-content: center;
 					li {
 						width: 25px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.hero {
+		.hero-content {
+			.name-song {
+				.name {
+					top: -1480%;
+					left: 60%;
+				}
+			}
+		}
+	}
+
+	.biography {
+		.biography-content {
+			.biography-content-1 {
+				.inside-content {
+					.texto {
+						gap: 10rem;
+					}
+				}
+			}
+
+			.biography-content-3 {
+				.biography-content-3-container {
+					.texto {
+						.img-bio3 {
+							img {
+								width: 200px;
+							}
+						}
+
+						p {
+							padding:1rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.on-tour {
+		.tickets-section {
+			.tickets {
+				.tickets-content {
+					.rectangle {
+						width: 80vw;
 					}
 				}
 			}
